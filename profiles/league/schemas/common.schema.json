@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.bowflow.example/profiles/league/schemas/common.schema.json",
+  "title": "Gemeinsame Typen",
+  "$defs": {
+    "MatchNumber": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Nummer des Matches (Zeitslot) im Spielplan."
+    },
+    "SetNumber": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "TargetNumber": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "StartNumber": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Startnummer des Schützen in der Mannschaft; immer ab 1, ohne Lücken."
+    },
+    "ArrowValue": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 10,
+      "description": "0 = Fehlschuss, null = noch nicht geschossen."
+    },
+    "Team": {
+      "type": "object",
+      "required": [
+        "id",
+        "name"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "../../../core/schemas/common.schema.json#/$defs/Id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "MatchState": {
+      "enum": [
+        "LOCKED",
+        "ACTIVE",
+        "COMPLETED"
+      ]
+    },
+    "EventStateValue": {
+      "enum": [
+        "PLANNED",
+        "RUNNING",
+        "FINISHED"
+      ]
+    }
+  }
+}

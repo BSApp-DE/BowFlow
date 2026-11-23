@@ -1,0 +1,14 @@
+# Beispieldatei -> Schema, das sie erfüllen muss (geprüft von tools/validate.py)
+- {file: schedule.json, schema: "schedule.schema.json"}
+- {file: event-state.json, schema: "event-state.schema.json"}
+- {file: lineup.json, schema: "lineup.schema.json"}
+- {file: provisional-set.json, schema: "provisional-set.schema.json"}
+- {file: official-set.json, schema: "official-set.schema.json"}
+- {file: results.json, schema: "results.schema.json"}
+- {file: standings.json, schema: "standings.schema.json"}
+- {file: notification-official-set.json, schema: "core:notification.schema.json"}
+- {file: notification-lineup-deleted.json, schema: "core:notification.schema.json"}
+- {file: snapshot.json, schema: "snapshot.schema.json"}
+- {file: shoot-off.json, schema: "shoot-off.schema.json"}
+- {file: notification-shoot-off.json, schema: "core:notification.schema.json"}
+- {file: roster.json, schema: "roster.schema.json"}

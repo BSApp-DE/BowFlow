@@ -1,0 +1,28 @@
+{
+  "scoresheet_id": "ss_101",
+  "set_number": 2,
+  "shooters": [
+    {
+      "start_number": 1,
+      "arrows": [
+        10,
+        9
+      ]
+    },
+    {
+      "start_number": 2,
+      "arrows": [
+        0,
+        8
+      ]
+    },
+    {
+      "start_number": 3,
+      "arrows": [
+        9,
+        9
+      ]
+    }
+  ],
+  "penalty_points": 0
+}

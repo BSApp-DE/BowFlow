@@ -1,0 +1,34 @@
+{
+  "sequence": 118,
+  "sent_at": "2026-11-29T10:14:07+01:00",
+  "event_id": "ev_42",
+  "type": "official_set.updated",
+  "object": {
+    "scoresheet_id": "ss_101",
+    "set_number": 2,
+    "shooters": [
+      {
+        "start_number": 1,
+        "arrows": [
+          10,
+          9
+        ]
+      },
+      {
+        "start_number": 2,
+        "arrows": [
+          0,
+          8
+        ]
+      },
+      {
+        "start_number": 3,
+        "arrows": [
+          9,
+          9
+        ]
+      }
+    ],
+    "penalty_points": 0
+  }
+}

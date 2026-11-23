@@ -1,0 +1,8 @@
+{
+  "state": "RUNNING",
+  "active_match": 1,
+  "match_states": {
+    "1": "ACTIVE",
+    "2": "LOCKED"
+  }
+}

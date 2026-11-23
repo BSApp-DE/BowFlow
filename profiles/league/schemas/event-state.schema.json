@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.bowflow.example/profiles/league/schemas/event-state.schema.json",
+  "title": "Freigabe-Stand (lesen und schreiben)",
+  "type": "object",
+  "required": ["state", "active_match", "match_states"],
+  "additionalProperties": false,
+  "properties": {
+    "state": { "$ref": "common.schema.json#/$defs/EventStateValue" },
+    "active_match": { "oneOf": [{ "$ref": "common.schema.json#/$defs/MatchNumber" }, { "type": "null" }], "description": "Freigegebenes Match; null, wenn keines aktiv ist." },
+    "match_states": {
+      "type": "object",
+      "description": "Schlüssel = Match-Nummer als Text.",
+      "patternProperties": { "^[1-9][0-9]*$": { "$ref": "common.schema.json#/$defs/MatchState" } },
+      "additionalProperties": false
+    }
+  }
+}

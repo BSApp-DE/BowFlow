@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.bowflow.example/profiles/league/schemas/snapshot.schema.json",
+  "title": "Snapshot: alle geteilten Objekte",
+  "type": "object",
+  "required": [
+    "sequence",
+    "schedule",
+    "event_state",
+    "rosters",
+    "lineups",
+    "provisional_sets",
+    "official_sets",
+    "shoot_offs",
+    "results",
+    "standings"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "sequence": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Laufnummer der letzten Benachrichtigung an diese App zum Zeitpunkt des Snapshots."
+    },
+    "schedule": {
+      "$ref": "schedule.schema.json"
+    },
+    "event_state": {
+      "$ref": "event-state.schema.json"
+    },
+    "rosters": {
+      "type": "array",
+      "items": {
+        "$ref": "roster.schema.json"
+      }
+    },
+    "lineups": {
+      "type": "array",
+      "items": {
+        "$ref": "lineup.schema.json"
+      }
+    },
+    "provisional_sets": {
+      "type": "array",
+      "items": {
+        "$ref": "provisional-set.schema.json"
+      }
+    },
+    "official_sets": {
+      "type": "array",
+      "items": {
+        "$ref": "official-set.schema.json"
+      }
+    },
+    "shoot_offs": {
+      "type": "array",
+      "items": {
+        "$ref": "shoot-off.schema.json"
+      }
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "$ref": "results.schema.json"
+      }
+    },
+    "standings": {
+      "$ref": "standings.schema.json"
+    }
+  }
+}

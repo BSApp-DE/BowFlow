@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.bowflow.example/profiles/league/schemas/standings.schema.json",
+  "title": "Tabelle (nur lesen)",
+  "type": "object",
+  "required": ["standings"],
+  "additionalProperties": false,
+  "properties": {
+    "standings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rank", "team", "match_points_won", "match_points_lost", "set_points_won", "set_points_lost", "rank_change"],
+        "additionalProperties": false,
+        "properties": {
+          "rank": { "type": "integer", "minimum": 1 },
+          "team": { "$ref": "common.schema.json#/$defs/Team" },
+          "match_points_won": { "type": "integer", "minimum": 0 },
+          "match_points_lost": { "type": "integer", "minimum": 0 },
+          "set_points_won": { "type": "integer", "minimum": 0 },
+          "set_points_lost": { "type": "integer", "minimum": 0 },
+          "rank_change": { "type": "integer", "description": "Positiv = Plätze gewonnen seit Tagesbeginn." }
+        }
+      }
+    }
+  }
+}

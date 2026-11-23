@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.bowflow.example/profiles/league/schemas/schedule.schema.json",
+  "title": "Spielplan (nur lesen)",
+  "type": "object",
+  "required": [
+    "event",
+    "rules",
+    "matches"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "event": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "date"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "../../../core/schemas/common.schema.json#/$defs/Id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "league_name": {
+          "type": "string",
+          "description": "Name der Liga (z. B. Testliga Recurve)."
+        },
+        "season_name": {
+          "type": "string",
+          "description": "Name der Veranstaltung bzw. Saison, zu der der Wettkampftag gehört (z. B. Runde 2026)."
+        },
+        "location": {
+          "type": "object",
+          "required": [
+            "name"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Ortsname (z. B. Schützenhaus Musterstadt)."
+            },
+            "street": {
+              "type": "string"
+            },
+            "postal_code": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "info": {
+              "type": "string",
+              "description": "Hinweise zum Ort (z. B. Parkplatz)."
+            }
+          }
+        }
+      }
+    },
+    "rules": {
+      "type": "object",
+      "required": [
+        "mode",
+        "sets_per_match",
+        "shooters_per_team",
+        "arrows_per_shooter_per_set",
+        "points_to_win"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "enum": [
+            "LEAGUE",
+            "KNOCKOUT"
+          ],
+          "description": "LEAGUE: bei 5:5 nach allen Sätzen unentschieden. KNOCKOUT: bei Satzgleichstand wird gestochen, das Match ist erst nach dem Stechen entschieden."
+        },
+        "sets_per_match": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "shooters_per_team": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "arrows_per_shooter_per_set": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "points_to_win": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "matches": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "number",
+          "scoresheets"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "number": {
+            "$ref": "common.schema.json#/$defs/MatchNumber"
+          },
+          "scoresheets": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 8,
+            "description": "4, 6 oder 8 Schusszettel; Begegnungen: Scheibe 1 gegen 2, 3 gegen 4 usw.",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "target_number",
+                "team"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "$ref": "../../../core/schemas/common.schema.json#/$defs/Id"
+                },
+                "target_number": {
+                  "$ref": "common.schema.json#/$defs/TargetNumber"
+                },
+                "team": {
+                  "$ref": "common.schema.json#/$defs/Team"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

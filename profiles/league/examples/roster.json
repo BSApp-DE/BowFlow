@@ -1,0 +1,24 @@
+{
+  "team": {
+    "id": "t_1",
+    "name": "BSC Musterstadt 1"
+  },
+  "members": [
+    {
+      "start_number": 1,
+      "name": "Max Mustermann"
+    },
+    {
+      "start_number": 2,
+      "name": "Erika Muster"
+    },
+    {
+      "start_number": 3,
+      "name": "Hans Beispiel"
+    },
+    {
+      "start_number": 4,
+      "name": "Anna Probe"
+    }
+  ]
+}

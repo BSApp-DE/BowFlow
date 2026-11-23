@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.bowflow.example/core/schemas/join.schema.json",
+  "title": "Beitritt",
+  "$defs": {
+    "JoinRequest": {
+      "type": "object",
+      "required": [
+        "code",
+        "app",
+        "webhook_url"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^[A-HJ-NP-Za-hj-np-z2-9]{6}$",
+          "description": "6-stelliger Beitrittscode der Verwaltungs-App. Zeichen: A-Z und 2-9 ohne leicht verwechselbare (0, O, 1, I). Groß- und Kleinschreibung egal."
+        },
+        "app": {
+          "type": "object",
+          "required": [
+            "name",
+            "version"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            }
+          }
+        },
+        "device_name": {
+          "type": "string",
+          "maxLength": 80,
+          "description": "Optionaler Name des Geräts oder der Verbindung (z. B. Tablet Halle), den die Verwaltungs-App in ihrer Verbindungsliste zeigt."
+        },
+        "webhook_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "link_templates": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Optionale URL-Vorlagen der App mit Platzhaltern in geschweiften Klammern. Welche Schlüssel und Platzhalter es gibt, legt das Profil fest."
+        }
+      }
+    },
+    "JoinResponse": {
+      "type": "object",
+      "required": [
+        "event_id",
+        "profile",
+        "app_id",
+        "token",
+        "expires_at",
+        "webhook_secret"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "event_id": {
+          "$ref": "common.schema.json#/$defs/Id"
+        },
+        "profile": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$",
+          "description": "Profil des Wettkampfs, z. B. league. Es legt die Objekte fest."
+        },
+        "app_id": {
+          "$ref": "common.schema.json#/$defs/Id"
+        },
+        "token": {
+          "type": "string",
+          "description": "Bearer-Token; gilt bis expires_at."
+        },
+        "expires_at": {
+          "$ref": "common.schema.json#/$defs/Timestamp",
+          "description": "Ablaufzeitpunkt des Tokens."
+        },
+        "webhook_secret": {
+          "type": "string",
+          "description": "Geheimnis, mit dem die Verwaltungs-App Webhooks signiert."
+        }
+      }
+    }
+  }
+}

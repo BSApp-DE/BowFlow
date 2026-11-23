@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.bowflow.example/profiles/league/schemas/provisional-set.schema.json",
+  "title": "Vorläufiger Satz (lesen und schreiben)",
+  "type": "object",
+  "required": ["scoresheet_id", "set_number", "arrows", "closed"],
+  "additionalProperties": false,
+  "properties": {
+    "scoresheet_id": { "$ref": "../../../core/schemas/common.schema.json#/$defs/Id" },
+    "set_number": { "$ref": "common.schema.json#/$defs/SetNumber" },
+    "arrows": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/ArrowValue" },
+      "minItems": 1,
+      "description": "Pfeil für Pfeil in Schussreihenfolge; Pfeil 1 und 2 gehören Schütze 1, 3 und 4 Schütze 2 usw."
+    },
+    "closed": { "type": "boolean", "description": "true, wenn der Spotter das Satzende bestätigt hat." }
+  }
+}

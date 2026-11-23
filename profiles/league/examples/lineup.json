@@ -1,0 +1,20 @@
+{
+  "scoresheet_id": "ss_101",
+  "shooters": [
+    {
+      "position": 1,
+      "start_number": 1,
+      "name": "Max Mustermann"
+    },
+    {
+      "position": 2,
+      "start_number": 2,
+      "name": "Erika Muster"
+    },
+    {
+      "position": 3,
+      "start_number": 3,
+      "name": "Hans Beispiel"
+    }
+  ]
+}

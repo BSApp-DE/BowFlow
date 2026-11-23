@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.bowflow.example/profiles/league/schemas/shoot-off.schema.json",
+  "title": "Stechen (lesen und schreiben)",
+  "description": "Ergebnis des Stechens bei Satzgleichstand im KO-Modus. Es wird nur der Sieger erfasst.",
+  "type": "object",
+  "required": [
+    "scoresheet_id",
+    "won"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "scoresheet_id": {
+      "$ref": "../../../core/schemas/common.schema.json#/$defs/Id"
+    },
+    "won": {
+      "type": "boolean",
+      "description": "true, wenn die Mannschaft dieses Schusszettels das Stechen gewonnen hat. Gilt für die Begegnung; die Gegnerin hat damit verloren."
+    }
+  }
+}

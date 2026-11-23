@@ -1,0 +1,23 @@
+# Maschinenlesbare Beschreibung des Profils. Wird von tools/validate.py gegen Schemas, OpenAPI und Doku geprüft.
+profile: league
+title: Liga-Wettkämpfe
+version: "1.0"
+management_app: Liga App
+# Schlüssel und Platzhalter für link_templates beim Beitritt
+link_templates:
+  scoresheet: [scoresheet_id]
+# Pfade relativ zu /events/{event_id}
+# access: read = verbundene Apps nur lesen; read_write = lesen und schreiben (PUT); deletable = zusätzlich DELETE
+objects:
+  - {name: schedule,        path: "/schedule",                                                        schema: schedule.schema.json,        access: read}
+  - {name: roster,          path: "/teams/{team_id}/roster",                                          schema: roster.schema.json,          access: read}
+  - {name: event_state,     path: "/state",                                                           schema: event-state.schema.json,     access: read_write}
+  - {name: lineup,          path: "/scoresheets/{scoresheet_id}/lineup",                              schema: lineup.schema.json,          access: read_write, deletable: true}
+  - {name: provisional_set, path: "/scoresheets/{scoresheet_id}/provisional-sets/{set_number}",       schema: provisional-set.schema.json, access: read_write}
+  - {name: official_set,    path: "/scoresheets/{scoresheet_id}/official-sets/{set_number}",          schema: official-set.schema.json,    access: read_write}
+  - {name: shoot_off,       path: "/scoresheets/{scoresheet_id}/shoot-off",                           schema: shoot-off.schema.json,        access: read_write, deletable: true}
+  - {name: results,         path: "/scoresheets/{scoresheet_id}/results",                             schema: results.schema.json,         access: read}
+  - {name: standings,       path: "/standings",                                                       schema: standings.schema.json,       access: read}
+snapshot:
+  path: /snapshot
+  schema: snapshot.schema.json

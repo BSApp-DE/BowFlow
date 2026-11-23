@@ -1,0 +1,19 @@
+{
+  "scoresheet_id": "ss_101",
+  "sets": [
+    {
+      "set_number": 1,
+      "ring_sum": 52,
+      "set_points": 2
+    },
+    {
+      "set_number": 2,
+      "ring_sum": 45,
+      "set_points": 0
+    }
+  ],
+  "set_points_total": 2,
+  "match_points": null,
+  "decided": false,
+  "shoot_off_pending": false
+}

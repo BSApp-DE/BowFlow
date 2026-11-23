@@ -1,0 +1,253 @@
+{
+  "sequence": 119,
+  "schedule": {
+    "event": {
+      "id": "ev_42",
+      "name": "Testliga Recurve, Wettkampftag 1",
+      "date": "2026-11-29",
+      "league_name": "Testliga Recurve",
+      "season_name": "Runde 2026",
+      "location": {
+        "name": "Schützenhaus Musterstadt",
+        "street": "Schützenweg 1",
+        "postal_code": "12345",
+        "city": "Musterstadt",
+        "info": "Parkplatz hinter dem Gebäude"
+      }
+    },
+    "rules": {
+      "mode": "LEAGUE",
+      "sets_per_match": 5,
+      "shooters_per_team": 3,
+      "arrows_per_shooter_per_set": 2,
+      "points_to_win": 6
+    },
+    "matches": [
+      {
+        "number": 1,
+        "scoresheets": [
+          {
+            "id": "ss_101",
+            "target_number": 1,
+            "team": {
+              "id": "t_1",
+              "name": "BSC Musterstadt 1"
+            }
+          },
+          {
+            "id": "ss_102",
+            "target_number": 2,
+            "team": {
+              "id": "t_2",
+              "name": "SV Beispiel 2"
+            }
+          },
+          {
+            "id": "ss_103",
+            "target_number": 3,
+            "team": {
+              "id": "t_3",
+              "name": "SV Beispiel 3"
+            }
+          },
+          {
+            "id": "ss_104",
+            "target_number": 4,
+            "team": {
+              "id": "t_4",
+              "name": "BSC Beispiel 4"
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "scoresheets": [
+          {
+            "id": "ss_201",
+            "target_number": 1,
+            "team": {
+              "id": "t_3",
+              "name": "SV Beispiel 3"
+            }
+          },
+          {
+            "id": "ss_202",
+            "target_number": 2,
+            "team": {
+              "id": "t_1",
+              "name": "BSC Musterstadt 1"
+            }
+          },
+          {
+            "id": "ss_203",
+            "target_number": 3,
+            "team": {
+              "id": "t_4",
+              "name": "BSC Beispiel 4"
+            }
+          },
+          {
+            "id": "ss_204",
+            "target_number": 4,
+            "team": {
+              "id": "t_2",
+              "name": "SV Beispiel 2"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "event_state": {
+    "state": "RUNNING",
+    "active_match": 1,
+    "match_states": {
+      "1": "ACTIVE",
+      "2": "LOCKED"
+    }
+  },
+  "rosters": [
+    {
+      "team": {
+        "id": "t_1",
+        "name": "BSC Musterstadt 1"
+      },
+      "members": [
+        {
+          "start_number": 1,
+          "name": "Max Mustermann"
+        },
+        {
+          "start_number": 2,
+          "name": "Erika Muster"
+        },
+        {
+          "start_number": 3,
+          "name": "Hans Beispiel"
+        },
+        {
+          "start_number": 4,
+          "name": "Anna Probe"
+        }
+      ]
+    }
+  ],
+  "lineups": [
+    {
+      "scoresheet_id": "ss_101",
+      "shooters": [
+        {
+          "position": 1,
+          "start_number": 1,
+          "name": "Max Mustermann"
+        },
+        {
+          "position": 2,
+          "start_number": 2,
+          "name": "Erika Muster"
+        },
+        {
+          "position": 3,
+          "start_number": 3,
+          "name": "Hans Beispiel"
+        }
+      ]
+    }
+  ],
+  "provisional_sets": [
+    {
+      "scoresheet_id": "ss_101",
+      "set_number": 2,
+      "arrows": [
+        10,
+        9,
+        0,
+        8,
+        null,
+        null
+      ],
+      "closed": false
+    }
+  ],
+  "official_sets": [
+    {
+      "scoresheet_id": "ss_101",
+      "set_number": 2,
+      "shooters": [
+        {
+          "start_number": 1,
+          "arrows": [
+            10,
+            9
+          ]
+        },
+        {
+          "start_number": 2,
+          "arrows": [
+            0,
+            8
+          ]
+        },
+        {
+          "start_number": 3,
+          "arrows": [
+            9,
+            9
+          ]
+        }
+      ],
+      "penalty_points": 0
+    }
+  ],
+  "shoot_offs": [],
+  "results": [
+    {
+      "scoresheet_id": "ss_101",
+      "sets": [
+        {
+          "set_number": 1,
+          "ring_sum": 52,
+          "set_points": 2
+        },
+        {
+          "set_number": 2,
+          "ring_sum": 45,
+          "set_points": 0
+        }
+      ],
+      "set_points_total": 2,
+      "match_points": null,
+      "decided": false,
+      "shoot_off_pending": false
+    }
+  ],
+  "standings": {
+    "standings": [
+      {
+        "rank": 1,
+        "team": {
+          "id": "t_1",
+          "name": "BSC Musterstadt 1"
+        },
+        "match_points_won": 8,
+        "match_points_lost": 4,
+        "set_points_won": 24,
+        "set_points_lost": 18,
+        "rank_change": 2
+      },
+      {
+        "rank": 2,
+        "team": {
+          "id": "t_2",
+          "name": "SV Beispiel 2"
+        },
+        "match_points_won": 6,
+        "match_points_lost": 6,
+        "set_points_won": 20,
+        "set_points_lost": 20,
+        "rank_change": -1
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "sequence": 119,
+  "sent_at": "2026-11-29T10:15:30+01:00",
+  "event_id": "ev_42",
+  "type": "lineup.deleted",
+  "object": {
+    "scoresheet_id": "ss_101"
+  }
+}

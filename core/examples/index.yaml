@@ -1,0 +1,4 @@
+# Beispieldatei -> Schema (geprüft von tools/validate.py)
+- {file: join-request.json, schema: "join.schema.json#/$defs/JoinRequest"}
+- {file: join-response.json, schema: "join.schema.json#/$defs/JoinResponse"}
+- {file: problem.json, schema: "problem.schema.json"}

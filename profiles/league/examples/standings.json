@@ -1,0 +1,28 @@
+{
+  "standings": [
+    {
+      "rank": 1,
+      "team": {
+        "id": "t_1",
+        "name": "BSC Musterstadt 1"
+      },
+      "match_points_won": 8,
+      "match_points_lost": 4,
+      "set_points_won": 24,
+      "set_points_lost": 18,
+      "rank_change": 2
+    },
+    {
+      "rank": 2,
+      "team": {
+        "id": "t_2",
+        "name": "SV Beispiel 2"
+      },
+      "match_points_won": 6,
+      "match_points_lost": 6,
+      "set_points_won": 20,
+      "set_points_lost": 20,
+      "rank_change": -1
+    }
+  ]
+}

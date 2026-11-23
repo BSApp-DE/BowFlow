@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.bowflow.example/core/schemas/notification.schema.json",
+  "title": "Webhook-Benachrichtigung",
+  "type": "object",
+  "required": [
+    "sequence",
+    "sent_at",
+    "event_id",
+    "type",
+    "object"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "sequence": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Fortlaufend je Empfänger. Eine Lücke bedeutet: Snapshot abrufen."
+    },
+    "sent_at": {
+      "$ref": "common.schema.json#/$defs/Timestamp"
+    },
+    "event_id": {
+      "$ref": "common.schema.json#/$defs/Id"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*\\.(updated|deleted)$",
+      "description": "Die erlaubten Typen legt das Profil fest: <objekt>.updated oder <objekt>.deleted."
+    },
+    "object": {
+      "description": "Das geänderte Objekt; bei *.deleted ein Verweis mit den Schlüsselfeldern.",
+      "type": "object"
+    }
+  }
+}

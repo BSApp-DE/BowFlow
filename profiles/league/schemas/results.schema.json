@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.bowflow.example/profiles/league/schemas/results.schema.json",
+  "title": "Ergebnisse je Schusszettel (nur lesen)",
+  "type": "object",
+  "required": [
+    "scoresheet_id",
+    "sets",
+    "set_points_total",
+    "match_points",
+    "decided",
+    "shoot_off_pending"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "scoresheet_id": {
+      "$ref": "../../../core/schemas/common.schema.json#/$defs/Id"
+    },
+    "sets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "set_number",
+          "ring_sum",
+          "set_points"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "set_number": {
+            "$ref": "common.schema.json#/$defs/SetNumber"
+          },
+          "ring_sum": {
+            "type": "integer",
+            "description": "Ringsumme nach Abzug der Strafpunkte."
+          },
+          "set_points": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "set_points_total": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "match_points": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "null, solange das Match nicht entschieden ist."
+    },
+    "decided": {
+      "type": "boolean"
+    },
+    "shoot_off_pending": {
+      "type": "boolean",
+      "description": "true, wenn im KO-Modus nach allen Sätzen Gleichstand herrscht und der Sieger des Stechens noch fehlt. Solange gilt decided = false."
+    }
+  }
+}

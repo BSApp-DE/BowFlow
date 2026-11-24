@@ -57,9 +57,9 @@ Objekt `competition_plan`. Wettkampftag (`id`, `name`, `date`; optional `league_
 
 ## Freigabe-Stand
 
-`state` (`PLANNED`, `RUNNING`, `FINISHED`) und `match_states` je Match (`LOCKED`, `ACTIVE`, `COMPLETED`).
+`state` (`PLANNED`, `RUNNING`, `FINISHED`) und `match_states`, eine Liste mit `number` (Match-Nummer) und `state` (`LOCKED`, `ACTIVE`, `COMPLETED`) je Match.
 
-- Es ist immer höchstens ein Match `ACTIVE`. Das freigegebene Match ist das mit diesem Wert; ist keines `ACTIVE`, ist keines freigegeben.
+- Jede Match-Nummer kommt höchstens einmal vor. Es ist immer höchstens ein Match `ACTIVE`. Das freigegebene Match ist das mit diesem Wert; ist keines `ACTIVE`, ist keines freigegeben.
 - `FINISHED` setzt der Kampfrichter bzw. Veranstalter ausdrücklich. Die Liga braucht aktuell nur diesen Wert, die übrigen Felder dienen z. B. einer Liveanzeige.
 - Prüfungen wie „nur am Wettkampftag freigeben" sind Sache der schreibenden App.
 

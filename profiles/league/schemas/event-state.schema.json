@@ -8,10 +8,17 @@
   "properties": {
     "state": { "$ref": "common.schema.json#/$defs/EventStateValue" },
     "match_states": {
-      "type": "object",
-      "description": "Schlüssel = Match-Nummer als Text.",
-      "patternProperties": { "^[1-9][0-9]*$": { "$ref": "common.schema.json#/$defs/MatchState" } },
-      "additionalProperties": false
+      "type": "array",
+      "description": "Ein Eintrag je Match des Spielplans.",
+      "items": {
+        "type": "object",
+        "required": ["number", "state"],
+        "additionalProperties": false,
+        "properties": {
+          "number": { "$ref": "common.schema.json#/$defs/MatchNumber" },
+          "state": { "$ref": "common.schema.json#/$defs/MatchState" }
+        }
+      }
     }
   }
 }

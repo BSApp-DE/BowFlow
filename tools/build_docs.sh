@@ -30,18 +30,20 @@ done
 tmp=$(mktemp -d)
 mkdocs build -q -f tools/mkdocs.yml -d "$tmp/doku"
 mv "$tmp/doku" "$out/doku"
+cp tools/theme/logo.png "$out/logo.png"
 
 cat > "$out/index.html" <<HTML
 <!doctype html>
 <html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BowFlow</title>
+<link rel="icon" href="logo.png">
 <style>
 :root{--accent:#1e73be;--text:#222;--muted:#575760;--bg:#f7f8f9;--surface:#fff;--border:#e3e5e8}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
 header{background:var(--surface);box-shadow:0 1px 0 var(--border)}
-header div{max-width:60rem;margin:0 auto;padding:1.1rem 1.5rem;display:flex;gap:2rem;align-items:baseline;flex-wrap:wrap}
-header strong{font-size:1.25rem}
+header div{max-width:60rem;margin:0 auto;padding:1.1rem 1.5rem;display:flex;gap:2rem;align-items:center;flex-wrap:wrap}
+header strong{font-size:1.25rem;display:flex;align-items:center;gap:.6rem}header img{height:2.2rem;width:2.2rem}
 header a{color:var(--text);text-decoration:none}header a:hover{color:var(--accent)}
 main{max-width:60rem;margin:1.5rem auto;padding:0 1.5rem}
 .panel{background:var(--surface);padding:2rem}
@@ -55,7 +57,7 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 footer{max-width:60rem;margin:0 auto 2rem;padding:0 1.5rem;color:var(--muted);font-size:.9rem}
 </style>
 </head><body>
-<header><div><strong>BowFlow</strong><a href="doku/">Dokumentation</a><a href="https://github.com/BSApp-DE/BowFlow">GitHub</a></div></header>
+<header><div><strong><img src="logo.png" alt="">BowFlow</strong><a href="doku/">Dokumentation</a><a href="https://github.com/BSApp-DE/BowFlow">GitHub</a></div></header>
 <main><div class="panel">
 <h1>Offene Schnittstelle für den Bogensport.</h1>
 <p>BowFlow beschreibt, wie Apps bei Wettkämpfen Daten austauschen, zum Beispiel Liga App, Scoring App und Spotter App.</p>

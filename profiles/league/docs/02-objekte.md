@@ -4,6 +4,8 @@ Nur Objekte, die zwischen Apps ausgetauscht werden. Was eine App intern speicher
 
 Pfade relativ zu `{base_url}/bowflow/v1/events/{event_id}`.
 
+Beim Schreiben müssen `scoresheet_id` und `set_number` im Objekt gleich den Werten im Pfad sein, siehe [Kern](../../../core/docs/04-konventionen.md).
+
 | Objekt | Pfad | Verbundene App | Schema |
 |---|---|---|---|
 | Spielplan | `/competition-plan` | lesen | [competition-plan](../schemas/competition-plan.schema.json) |

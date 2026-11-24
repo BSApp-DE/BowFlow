@@ -10,6 +10,10 @@
 - Unbekannte Felder und unbekannte Benachrichtigungs-Typen ignorieren Empfänger.
 - Basis-Pfad: `{base_url}/bowflow/v1`. `{base_url}` ist die Adresse der Verwaltungs-App, also `https://<host>`. Der Wettkampf steckt im Pfad: `/events/{event_id}/...`.
 
+## Schlüsselfelder im Pfad und im Objekt
+
+Ein Objekt trägt seine Schlüsselfelder (zum Beispiel `scoresheet_id`, `set_number`) auch im Inhalt, weil es in Webhooks und im Snapshot ohne Pfad vorkommt. Beim Schreiben (`PUT`) müssen diese Felder im Inhalt **gleich den Werten im Pfad** sein. Weichen sie ab, lehnt die Verwaltungs-App mit `422 VALIDATION_FAILED` ab und speichert nichts.
+
 ## Fehler
 
 HTTP-Status plus Körper `{ "code": "...", "message": "..." }` ([Schema](../schemas/problem.schema.json)).
@@ -21,7 +25,7 @@ HTTP-Status plus Körper `{ "code": "...", "message": "..." }` ([Schema](../sche
 | 403 | `FORBIDDEN` | Objekt ist für verbundene Apps nur lesbar |
 | 403 | `OUTSIDE_TIME_WINDOW` | Aktion ist jetzt nicht erlaubt, zum Beispiel Schreiben außerhalb des Wettkampfdatums; die Verwaltungs-App darf das verlangen |
 | 404 | `NOT_FOUND` | Wettkampf oder Objekt unbekannt |
-| 422 | `VALIDATION_FAILED` | Objekt entspricht nicht dem Schema |
+| 422 | `VALIDATION_FAILED` | Objekt entspricht nicht dem Schema oder seine Schlüsselfelder weichen vom Pfad ab |
 | 429 | `RATE_LIMITED` | Zu viele Anfragen oder Fehlversuche, später erneut versuchen |
 
 Eine App, die mitten im Wettkampf `UNAUTHORIZED` erhält, wurde getrennt oder das Token ist abgelaufen. Sie braucht einen neuen Beitrittscode.

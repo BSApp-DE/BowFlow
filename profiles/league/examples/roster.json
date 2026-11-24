@@ -6,19 +6,23 @@
   "members": [
     {
       "start_number": 1,
-      "name": "Max Mustermann"
+      "first_name": "Max",
+      "last_name": "Mustermann"
     },
     {
       "start_number": 2,
-      "name": "Erika Muster"
+      "first_name": "Erika",
+      "last_name": "Muster"
     },
     {
       "start_number": 3,
-      "name": "Hans Beispiel"
+      "first_name": "Hans",
+      "last_name": "Beispiel"
     },
     {
       "start_number": 4,
-      "name": "Anna Probe"
+      "first_name": "Anna",
+      "last_name": "Probe"
     }
   ]
 }

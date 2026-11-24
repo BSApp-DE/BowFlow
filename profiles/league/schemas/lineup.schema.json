@@ -12,12 +12,13 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["position", "start_number", "name"],
+        "required": ["position", "start_number", "first_name", "last_name"],
         "additionalProperties": false,
         "properties": {
           "position": { "type": "integer", "minimum": 1, "description": "Schussreihenfolge." },
           "start_number": { "$ref": "common.schema.json#/$defs/StartNumber" },
-          "name": { "type": "string", "minLength": 1 }
+          "first_name": { "type": "string", "minLength": 1 },
+          "last_name": { "type": "string", "minLength": 1 }
         }
       }
     }

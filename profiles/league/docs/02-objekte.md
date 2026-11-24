@@ -50,10 +50,11 @@ Objekt `competition_plan`. Wettkampftag (`id`, `name`, `date`; optional `league_
 
 ## Schützenliste
 
-`team` (`id`, `name`) und `members` mit `start_number` und `name`.
+`team` (`id`, `name`) und `members` mit `start_number`, `first_name` und `last_name`.
 
 - Die Liste enthält alle Schützen, die für die Mannschaft gemeldet werden können. Die Scoring App wählt daraus beim Melden die 3 Schützen aus.
 - Ein Schütze ist über Mannschaft und `start_number` eindeutig. Es gibt keine Mitglieds-IDs.
+- Vor- und Nachname sind getrennte Felder, damit jede App die Anzeige nach Region wählen kann („Vorname Nachname“ oder „Nachname, Vorname“). Beide sind Pflicht.
 - Nur die Liga schreibt die Liste, verbundene App lesen sie. Ändert die Liga sie, schickt sie `roster.updated`.
 - Die Spotter App braucht die Liste nicht: Sie bekommt Namen und Startnummern mit der [Meldung](#meldung).
 
@@ -67,7 +68,7 @@ Objekt `competition_plan`. Wettkampftag (`id`, `name`, `date`; optional `league_
 
 ## Meldung
 
-`scoresheet_id` und `shooters` mit `position` (Schussreihenfolge), `start_number` und `name`.
+`scoresheet_id` und `shooters` mit `position` (Schussreihenfolge), `start_number`, `first_name` und `last_name`.
 
 - Ein Schütze ist über Mannschaft (steckt im Schusszettel) und `start_number` eindeutig. Startnummern laufen immer ab 1 ohne Lücken.
 - Zurücksetzen (`DELETE`) ist nur sinnvoll, solange noch keine Pfeile erfasst sind. Das prüft die schreibende App.

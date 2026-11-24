@@ -4,17 +4,20 @@
     {
       "position": 1,
       "start_number": 1,
-      "name": "Max Mustermann"
+      "first_name": "Max",
+      "last_name": "Mustermann"
     },
     {
       "position": 2,
       "start_number": 2,
-      "name": "Erika Muster"
+      "first_name": "Erika",
+      "last_name": "Muster"
     },
     {
       "position": 3,
       "start_number": 3,
-      "name": "Hans Beispiel"
+      "first_name": "Hans",
+      "last_name": "Beispiel"
     }
   ]
 }

@@ -20,14 +20,19 @@
         "type": "object",
         "required": [
           "start_number",
-          "name"
+          "first_name",
+          "last_name"
         ],
         "additionalProperties": false,
         "properties": {
           "start_number": {
             "$ref": "common.schema.json#/$defs/StartNumber"
           },
-          "name": {
+          "first_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "last_name": {
             "type": "string",
             "minLength": 1
           }

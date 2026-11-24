@@ -9,7 +9,7 @@ link_templates:
 # Pfade relativ zu /events/{event_id}
 # access: read = verbundene Apps nur lesen; read_write = lesen und schreiben (PUT); deletable = zusätzlich DELETE
 objects:
-  - {name: schedule,        path: "/schedule",                                                        schema: schedule.schema.json,        access: read}
+  - {name: competition_plan,  path: "/competition-plan",                                                schema: competition-plan.schema.json,  access: read}
   - {name: roster,          path: "/teams/{team_id}/roster",                                          schema: roster.schema.json,          access: read}
   - {name: event_state,     path: "/state",                                                           schema: event-state.schema.json,     access: read_write}
   - {name: lineup,          path: "/scoresheets/{scoresheet_id}/lineup",                              schema: lineup.schema.json,          access: read_write, deletable: true}

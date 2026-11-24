@@ -1,5 +1,5 @@
 # Beispieldatei -> Schema, das sie erfüllen muss (geprüft von tools/validate.py)
-- {file: schedule.json, schema: "schedule.schema.json"}
+- {file: competition-plan.json, schema: "competition-plan.schema.json"}
 - {file: event-state.json, schema: "event-state.schema.json"}
 - {file: lineup.json, schema: "lineup.schema.json"}
 - {file: provisional-set.json, schema: "provisional-set.schema.json"}

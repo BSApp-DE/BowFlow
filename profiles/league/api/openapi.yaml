@@ -37,7 +37,7 @@ paths:
           $ref: '#/components/responses/NotFound'
       tags:
       - Objekte
-  /events/{event_id}/schedule:
+  /events/{event_id}/competition-plan:
     get:
       summary: Spielplan (nur lesen)
       security: *id001
@@ -49,7 +49,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ../schemas/schedule.schema.json
+                $ref: ../schemas/competition-plan.schema.json
         '401':
           $ref: '#/components/responses/Unauthorized'
         '404':

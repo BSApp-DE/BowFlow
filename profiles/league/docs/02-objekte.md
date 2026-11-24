@@ -6,7 +6,7 @@ Pfade relativ zu `{base_url}/bowflow/v1/events/{event_id}`.
 
 | Objekt | Pfad | Verbundene App | Schema |
 |---|---|---|---|
-| Spielplan | `/schedule` | lesen | [schedule](../schemas/schedule.schema.json) |
+| Spielplan | `/competition-plan` | lesen | [competition-plan](../schemas/competition-plan.schema.json) |
 | Schützenliste | `/teams/{team_id}/roster` | lesen | [roster](../schemas/roster.schema.json) |
 | Freigabe-Stand | `/state` | lesen, schreiben | [event-state](../schemas/event-state.schema.json) |
 | Meldung | `/scoresheets/{id}/lineup` | lesen, schreiben, löschen | [lineup](../schemas/lineup.schema.json) |
@@ -23,7 +23,7 @@ Jede Änderung an einem Objekt löst eine Benachrichtigung aus (Aufbau und Zuste
 
 | Typ | Objekt | Wer löst aus |
 |---|---|---|
-| `schedule.updated` | Spielplan | Liga |
+| `competition_plan.updated` | Spielplan | Liga |
 | `roster.updated` | Schützenliste einer Mannschaft | Liga |
 | `event_state.updated` | Freigabe-Stand | verbundene App oder Liga |
 | `lineup.updated` | Meldung | verbundene App oder Liga |
@@ -37,7 +37,7 @@ Jede Änderung an einem Objekt löst eine Benachrichtigung aus (Aufbau und Zuste
 
 ## Spielplan
 
-Wettkampftag (`id`, `name`, `date`; optional `league_name`, `season_name` und `location` mit `name`, `street`, `postal_code`, `city`, `info`), Spielregeln (`rules`) und die Matches mit ihren Schusszettel-Einträgen: `id` des Schusszettels, `target_number`, `team` (`id`, `name`).
+Objekt `competition_plan`. Wettkampftag (`id`, `name`, `date`; optional `league_name`, `season_name` und `location` mit `name`, `street`, `postal_code`, `city`, `info`), Spielregeln (`rules`) und die Matches mit ihren Schusszettel-Einträgen: `id` des Schusszettels, `target_number`, `team` (`id`, `name`).
 
 - Ort und Namen sind für Berichte gedacht, zum Beispiel für den Kampfrichterbericht der Scoring App (Ort, Liga, Veranstaltung, Datum).
 - Begegnungen sind nicht eigens modelliert: Scheibe 1 gegen 2, 3 gegen 4 usw. innerhalb eines Matches.

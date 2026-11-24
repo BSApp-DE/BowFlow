@@ -20,7 +20,7 @@
     "sequence": {
       "type": "integer",
       "minimum": 0,
-      "description": "Laufnummer der letzten Benachrichtigung an diese App zum Zeitpunkt des Snapshots."
+      "description": "Höchste Laufnummer, die für diese App zum Zeitpunkt des Snapshots vergeben wurde, auch wenn die Benachrichtigung noch wartet. Wartende Benachrichtigungen bis zu dieser Nummer werden verworfen."
     },
     "schedule": {
       "$ref": "schedule.schema.json"

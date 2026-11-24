@@ -38,7 +38,7 @@ sequenceDiagram
 
     SC->>S: QR-Code des Schusszettels scannen
     KR->>S: Match 1 freigeben
-    S->>L: PUT /state (active_match 1)
+    S->>L: PUT /state (Match 1 ACTIVE)
     L--)P: event_state.updated
     SC->>S: 3 Schützen melden und bestätigen
     S->>L: PUT /scoresheets/ss_101/lineup
@@ -97,7 +97,7 @@ sequenceDiagram
     Note over S: Alle Begegnungen des Matches entschieden
     S->>L: PUT /state (Match 1 COMPLETED)
     KR->>S: Match 2 freigeben
-    S->>L: PUT /state (active_match 2)
+    S->>L: PUT /state (Match 2 ACTIVE)
     L--)P: event_state.updated
     Note over KR,P: Wiederholt, bis alle Matches des Spielplans geschossen sind
     KR->>S: Wettkampftag abschließen

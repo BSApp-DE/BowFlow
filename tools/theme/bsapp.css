@@ -1,0 +1,43 @@
+/* Look & Feel angelehnt an bsapp.de: heller Grund, weiße Flächen, Systemschrift, Akzent #1e73be */
+:root,
+[data-md-color-scheme="default"] {
+  --bs-accent: #1e73be;
+  --bs-text: #222222;
+  --bs-text-muted: #575760;
+  --bs-bg: #f7f8f9;
+  --bs-surface: #ffffff;
+  --bs-border: #e3e5e8;
+
+  --md-primary-fg-color: var(--bs-surface);
+  --md-primary-bg-color: var(--bs-text);
+  --md-primary-bg-color--light: var(--bs-text-muted);
+  --md-accent-fg-color: var(--bs-accent);
+  --md-default-bg-color: var(--bs-bg);
+  --md-default-fg-color: var(--bs-text);
+  --md-default-fg-color--light: var(--bs-text-muted);
+  --md-typeset-color: var(--bs-text);
+  --md-typeset-a-color: var(--bs-accent);
+  --md-code-bg-color: #f0f1f3;
+  --md-text-font: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.md-header { box-shadow: 0 1px 0 var(--bs-border); }
+.md-header__title { font-weight: 700; }
+.md-tabs { background: var(--bs-surface); color: var(--bs-text); box-shadow: 0 1px 0 var(--bs-border); }
+.md-tabs__link { color: var(--bs-text); opacity: .8; }
+.md-tabs__link--active, .md-tabs__link:hover { color: var(--bs-accent); opacity: 1; }
+
+/* Inhalt als weiße Fläche, wie bei bsapp.de */
+.md-content__inner {
+  background: var(--bs-surface);
+  padding: 1rem 2rem 2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.md-typeset h1 { font-weight: 400; color: var(--bs-text); }
+.md-typeset h2, .md-typeset h3 { font-weight: 400; }
+.md-typeset a { text-decoration: none; }
+.md-typeset a:hover { text-decoration: underline; }
+.md-typeset table:not([class]) { border-color: var(--bs-border); box-shadow: none; }
+.md-typeset table:not([class]) th { background: var(--bs-bg); color: var(--bs-text); }
+.md-nav__link--active, .md-nav__link:hover { color: var(--bs-accent); }

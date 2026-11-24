@@ -6,7 +6,8 @@ site_name: BowFlow Spezifikation
 docs_dir: ..
 use_directory_urls: true
 exclude_docs: |
-  /tools/
+  /tools/*
+  !/tools/theme/
   /.github/
   /_site/
   /.venv/
@@ -14,9 +15,12 @@ exclude_docs: |
 theme:
   name: material
   language: de
+  font: false
   features:
     - navigation.sections
     - content.code.copy
+extra_css:
+  - tools/theme/bsapp.css
 extra:
   generator: false
 markdown_extensions:

@@ -18,9 +18,7 @@
   "additionalProperties": false,
   "properties": {
     "sequence": {
-      "type": "integer",
-      "minimum": 0,
-      "description": "Höchste Laufnummer, die für diese App zum Zeitpunkt des Snapshots vergeben wurde, auch wenn die Benachrichtigung noch wartet. Wartende Benachrichtigungen bis zu dieser Nummer werden verworfen."
+      "$ref": "../../../core/schemas/common.schema.json#/$defs/SnapshotSequence"
     },
     "schedule": {
       "$ref": "schedule.schema.json"

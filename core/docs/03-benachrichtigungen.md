@@ -38,7 +38,7 @@
 
 ## Fallback: Snapshot
 
-`GET /events/{event_id}/snapshot` liefert alle geteilten Objekte des Wettkampfs auf einmal plus die aktuelle `sequence`. Das Schema des Snapshots legt das Profil fest. Eine App ruft ihn ab,
+`GET /events/{event_id}/snapshot` (der Pfad steht im [Profil](05-profile.md)) liefert alle geteilten Objekte des Wettkampfs auf einmal plus die aktuelle `sequence`. Das Schema des Snapshots legt das Profil fest. Eine App ruft ihn ab,
 
 1. beim Start,
 2. nach jedem Verbindungsabriss,

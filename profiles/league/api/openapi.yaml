@@ -14,22 +14,13 @@ paths:
     get:
       summary: Alle geteilten Objekte auf einmal
       description: Für Start, Verbindungsabriss, Lücke in der Laufnummer und das 60-Sekunden-Sicherheitsnetz.
-        Mit `since` kann die App ihre letzte verarbeitete Laufnummer mitschicken. Hat sich nichts geändert,
-        kommt `304` ohne Body. Mit der Auslieferung verwirft die Verwaltungs-App alle wartenden
-        Benachrichtigungen an diese App bis zur `sequence` des Snapshots.
+        `since`, `304` und das Verwerfen wartender Benachrichtigungen regelt der Kern.
       security: &id001
       - bearerAuth: []
       parameters:
       - &id002
         $ref: '#/components/parameters/EventId'
-      - name: since
-        in: query
-        required: false
-        description: Zuletzt verarbeitete `sequence` der App. Ist sie gleich der aktuellen `sequence` dieser
-          App, antwortet die Verwaltungs-App mit `304`, sonst mit dem vollständigen Snapshot.
-        schema:
-          type: integer
-          minimum: 0
+      - $ref: ../../../core/api/openapi.yaml#/components/parameters/Since
       responses:
         '200':
           description: OK
@@ -38,7 +29,7 @@ paths:
               schema:
                 $ref: ../schemas/snapshot.schema.json
         '304':
-          description: Nichts geändert seit `since`. Kein Body.
+          $ref: ../../../core/api/openapi.yaml#/components/responses/NotModified
         '401':
           $ref: '#/components/responses/Unauthorized'
         '404':

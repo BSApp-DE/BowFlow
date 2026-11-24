@@ -25,7 +25,7 @@ Ein Profil legt fest:
 
 1. **Objekte** mit Pfad (unter `/events/{event_id}`), Schema und Zugriffsart: `read` (verbundene Apps nur lesen) oder `read_write` (lesen und schreiben), optional mit `deletable`.
 2. **Benachrichtigungs-Typen**: je Objekt `<objekt>.updated`, bei löschbaren Objekten zusätzlich `<objekt>.deleted`.
-3. **Snapshot:** ein Objekt, das alle geteilten Objekte des Wettkampfs enthält.
+3. **Snapshot:** Pfad und ein Objekt, das alle geteilten Objekte des Wettkampfs enthält. Es muss das Feld `sequence` tragen (Typ `SnapshotSequence` aus dem [Kern](../schemas/common.schema.json)). `since`, `304` und das Verwerfen wartender Benachrichtigungen regelt der [Kern](03-benachrichtigungen.md#fallback-snapshot).
 4. **Link-Vorlagen:** welche Schlüssel und Platzhalter eine App beim Beitritt in `link_templates` melden kann.
 5. **Begriffe und Abläufe** der Wettkampfart.
 

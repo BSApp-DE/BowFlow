@@ -9,6 +9,11 @@
       "maxLength": 64,
       "description": "Opake ID der Verwaltungs-App. Nie parsen."
     },
+    "SnapshotSequence": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Höchste Laufnummer, die für diese App zum Zeitpunkt des Snapshots vergeben wurde, auch wenn die Benachrichtigung noch wartet. Wartende Benachrichtigungen bis zu dieser Nummer werden verworfen."
+    },
     "Timestamp": {
       "type": "string",
       "format": "date-time",

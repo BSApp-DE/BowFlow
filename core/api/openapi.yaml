@@ -2,8 +2,8 @@ openapi: 3.1.0
 info:
   title: BowFlow API – Kern
   version: 1.0.0-draft
-  description: Beitritt und Benachrichtigungen. Gilt für jedes Profil. Die Objekte und ihre Pfade legt das Profil
-    fest.
+  description: Beitritt, Benachrichtigungen und die Regeln des Snapshots. Gilt für jedes Profil. Die Objekte, ihre
+    Pfade und der Pfad und Inhalt des Snapshots legt das Profil fest.
 servers:
 - url: '{base_url}/bowflow/v1'
   variables:
@@ -60,3 +60,17 @@ components:
       type: http
       scheme: bearer
       description: Token aus dem Beitritt; gilt bis zum Ende des Wettkampftags.
+  parameters:
+    Since:
+      name: since
+      in: query
+      required: false
+      description: Für den Snapshot des Profils. Zuletzt verarbeitete `sequence` der App. Ist sie gleich der
+        aktuellen `sequence` dieser App, antwortet die Verwaltungs-App mit `304`, sonst mit dem vollständigen
+        Snapshot. Siehe Kern 3, Benachrichtigungen.
+      schema:
+        type: integer
+        minimum: 0
+  responses:
+    NotModified:
+      description: Nichts geändert seit `since`. Kein Body.

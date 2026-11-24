@@ -1,0 +1,1047 @@
+{
+  "sequence": 57,
+  "competition_plan": {
+    "event": {
+      "id": "ev_43",
+      "name": "Testpokal Recurve, Runde 1",
+      "date": "2026-11-29",
+      "league_name": "Testpokal Recurve",
+      "location": {
+        "name": "Schützenhaus Musterstadt",
+        "street": "Schützenweg 1",
+        "postal_code": "12345",
+        "city": "Musterstadt",
+        "info": "Parkplatz hinter dem Gebäude"
+      }
+    },
+    "rules": {
+      "mode": "KNOCKOUT",
+      "sets_per_match": 5,
+      "shooters_per_team": 3,
+      "arrows_per_shooter_per_set": 2,
+      "points_to_win": 6
+    },
+    "matches": [
+      {
+        "number": 1,
+        "scoresheets": [
+          {
+            "id": "ss_101",
+            "target_number": 1,
+            "team": {
+              "id": "t_1",
+              "name": "SV Adler Testheim 1"
+            }
+          },
+          {
+            "id": "ss_102",
+            "target_number": 2,
+            "team": {
+              "id": "t_2",
+              "name": "BSC Blauer Pfeil 2"
+            }
+          },
+          {
+            "id": "ss_103",
+            "target_number": 3,
+            "team": {
+              "id": "t_3",
+              "name": "Schützenverein Eichwald 3"
+            }
+          },
+          {
+            "id": "ss_104",
+            "target_number": 4,
+            "team": {
+              "id": "t_4",
+              "name": "SC Goldener Bogen 4"
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "scoresheets": [
+          {
+            "id": "ss_201",
+            "target_number": 1,
+            "team": {
+              "id": "t_1",
+              "name": "SV Adler Testheim 1"
+            }
+          },
+          {
+            "id": "ss_202",
+            "target_number": 2,
+            "team": {
+              "id": "t_3",
+              "name": "Schützenverein Eichwald 3"
+            }
+          },
+          {
+            "id": "ss_203",
+            "target_number": 3,
+            "team": {
+              "id": "t_2",
+              "name": "BSC Blauer Pfeil 2"
+            }
+          },
+          {
+            "id": "ss_204",
+            "target_number": 4,
+            "team": {
+              "id": "t_4",
+              "name": "SC Goldener Bogen 4"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "event_state": {
+    "state": "RUNNING",
+    "match_states": [
+      {
+        "number": 1,
+        "state": "ACTIVE"
+      },
+      {
+        "number": 2,
+        "state": "LOCKED"
+      }
+    ]
+  },
+  "rosters": [
+    {
+      "team": {
+        "id": "t_1",
+        "name": "SV Adler Testheim 1"
+      },
+      "members": [
+        {
+          "start_number": 1,
+          "first_name": "Jonas",
+          "last_name": "Berger"
+        },
+        {
+          "start_number": 2,
+          "first_name": "Lea",
+          "last_name": "Kaiser"
+        },
+        {
+          "start_number": 3,
+          "first_name": "Murat",
+          "last_name": "Yildiz"
+        },
+        {
+          "start_number": 4,
+          "first_name": "Sofia",
+          "last_name": "Lenz"
+        },
+        {
+          "start_number": 5,
+          "first_name": "Tobias",
+          "last_name": "Ebert"
+        }
+      ]
+    },
+    {
+      "team": {
+        "id": "t_2",
+        "name": "BSC Blauer Pfeil 2"
+      },
+      "members": [
+        {
+          "start_number": 1,
+          "first_name": "Anja",
+          "last_name": "Vogel"
+        },
+        {
+          "start_number": 2,
+          "first_name": "Ben",
+          "last_name": "Hahn"
+        },
+        {
+          "start_number": 3,
+          "first_name": "Carla",
+          "last_name": "Roth"
+        },
+        {
+          "start_number": 4,
+          "first_name": "Dennis",
+          "last_name": "Pohl"
+        },
+        {
+          "start_number": 5,
+          "first_name": "Elif",
+          "last_name": "Kaya"
+        }
+      ]
+    },
+    {
+      "team": {
+        "id": "t_3",
+        "name": "Schützenverein Eichwald 3"
+      },
+      "members": [
+        {
+          "start_number": 1,
+          "first_name": "Frank",
+          "last_name": "Seidel"
+        },
+        {
+          "start_number": 2,
+          "first_name": "Greta",
+          "last_name": "Lang"
+        },
+        {
+          "start_number": 3,
+          "first_name": "Hannes",
+          "last_name": "Brandt"
+        },
+        {
+          "start_number": 4,
+          "first_name": "Ines",
+          "last_name": "Krause"
+        },
+        {
+          "start_number": 5,
+          "first_name": "Jörg",
+          "last_name": "Winter"
+        }
+      ]
+    },
+    {
+      "team": {
+        "id": "t_4",
+        "name": "SC Goldener Bogen 4"
+      },
+      "members": [
+        {
+          "start_number": 1,
+          "first_name": "Katrin",
+          "last_name": "Beck"
+        },
+        {
+          "start_number": 2,
+          "first_name": "Lukas",
+          "last_name": "Fischer"
+        },
+        {
+          "start_number": 3,
+          "first_name": "Mia",
+          "last_name": "Schulte"
+        },
+        {
+          "start_number": 4,
+          "first_name": "Nils",
+          "last_name": "Arnold"
+        },
+        {
+          "start_number": 5,
+          "first_name": "Olga",
+          "last_name": "Petrova"
+        }
+      ]
+    }
+  ],
+  "lineups": [
+    {
+      "scoresheet_id": "ss_101",
+      "shooters": [
+        {
+          "position": 1,
+          "start_number": 3,
+          "first_name": "Murat",
+          "last_name": "Yildiz"
+        },
+        {
+          "position": 2,
+          "start_number": 5,
+          "first_name": "Tobias",
+          "last_name": "Ebert"
+        },
+        {
+          "position": 3,
+          "start_number": 4,
+          "first_name": "Sofia",
+          "last_name": "Lenz"
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_102",
+      "shooters": [
+        {
+          "position": 1,
+          "start_number": 2,
+          "first_name": "Ben",
+          "last_name": "Hahn"
+        },
+        {
+          "position": 2,
+          "start_number": 5,
+          "first_name": "Elif",
+          "last_name": "Kaya"
+        },
+        {
+          "position": 3,
+          "start_number": 3,
+          "first_name": "Carla",
+          "last_name": "Roth"
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_103",
+      "shooters": [
+        {
+          "position": 1,
+          "start_number": 2,
+          "first_name": "Greta",
+          "last_name": "Lang"
+        },
+        {
+          "position": 2,
+          "start_number": 5,
+          "first_name": "Jörg",
+          "last_name": "Winter"
+        },
+        {
+          "position": 3,
+          "start_number": 3,
+          "first_name": "Hannes",
+          "last_name": "Brandt"
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_104",
+      "shooters": [
+        {
+          "position": 1,
+          "start_number": 2,
+          "first_name": "Lukas",
+          "last_name": "Fischer"
+        },
+        {
+          "position": 2,
+          "start_number": 5,
+          "first_name": "Olga",
+          "last_name": "Petrova"
+        },
+        {
+          "position": 3,
+          "start_number": 1,
+          "first_name": "Katrin",
+          "last_name": "Beck"
+        }
+      ]
+    }
+  ],
+  "provisional_sets": [],
+  "official_sets": [
+    {
+      "scoresheet_id": "ss_101",
+      "set_number": 1,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 3,
+          "arrows": [
+            8,
+            9
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            8,
+            8
+          ]
+        },
+        {
+          "start_number": 4,
+          "arrows": [
+            10,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_101",
+      "set_number": 2,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 3,
+          "arrows": [
+            10,
+            10
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            7,
+            6
+          ]
+        },
+        {
+          "start_number": 4,
+          "arrows": [
+            7,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_101",
+      "set_number": 3,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 3,
+          "arrows": [
+            6,
+            5
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            8,
+            8
+          ]
+        },
+        {
+          "start_number": 4,
+          "arrows": [
+            9,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_101",
+      "set_number": 4,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 3,
+          "arrows": [
+            6,
+            7
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            8,
+            7
+          ]
+        },
+        {
+          "start_number": 4,
+          "arrows": [
+            8,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_101",
+      "set_number": 5,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 3,
+          "arrows": [
+            9,
+            10
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            9,
+            9
+          ]
+        },
+        {
+          "start_number": 4,
+          "arrows": [
+            8,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_102",
+      "set_number": 1,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            8,
+            4
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            9,
+            7
+          ]
+        },
+        {
+          "start_number": 3,
+          "arrows": [
+            7,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_102",
+      "set_number": 2,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            7,
+            8
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            7,
+            9
+          ]
+        },
+        {
+          "start_number": 3,
+          "arrows": [
+            8,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_102",
+      "set_number": 3,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            10,
+            6
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            9,
+            7
+          ]
+        },
+        {
+          "start_number": 3,
+          "arrows": [
+            10,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_102",
+      "set_number": 4,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            7,
+            6
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            7,
+            9
+          ]
+        },
+        {
+          "start_number": 3,
+          "arrows": [
+            0,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_102",
+      "set_number": 5,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            8,
+            10
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            8,
+            8
+          ]
+        },
+        {
+          "start_number": 3,
+          "arrows": [
+            10,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_103",
+      "set_number": 1,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            7,
+            8
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            9,
+            10
+          ]
+        },
+        {
+          "start_number": 3,
+          "arrows": [
+            9,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_103",
+      "set_number": 2,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            8,
+            8
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            5,
+            9
+          ]
+        },
+        {
+          "start_number": 3,
+          "arrows": [
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_103",
+      "set_number": 3,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            10,
+            6
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            5,
+            6
+          ]
+        },
+        {
+          "start_number": 3,
+          "arrows": [
+            9,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_103",
+      "set_number": 4,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            7,
+            10
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            8,
+            9
+          ]
+        },
+        {
+          "start_number": 3,
+          "arrows": [
+            6,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_103",
+      "set_number": 5,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            10,
+            9
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            7,
+            7
+          ]
+        },
+        {
+          "start_number": 3,
+          "arrows": [
+            8,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_104",
+      "set_number": 1,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            9,
+            10
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            8,
+            10
+          ]
+        },
+        {
+          "start_number": 1,
+          "arrows": [
+            10,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_104",
+      "set_number": 2,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            10,
+            7
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            0,
+            9
+          ]
+        },
+        {
+          "start_number": 1,
+          "arrows": [
+            7,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_104",
+      "set_number": 3,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            8,
+            9
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            6,
+            8
+          ]
+        },
+        {
+          "start_number": 1,
+          "arrows": [
+            9,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_104",
+      "set_number": 4,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            9,
+            8
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            10,
+            0
+          ]
+        },
+        {
+          "start_number": 1,
+          "arrows": [
+            0,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "scoresheet_id": "ss_104",
+      "set_number": 5,
+      "penalty_points": 0,
+      "shooters": [
+        {
+          "start_number": 2,
+          "arrows": [
+            8,
+            9
+          ]
+        },
+        {
+          "start_number": 5,
+          "arrows": [
+            10,
+            8
+          ]
+        },
+        {
+          "start_number": 1,
+          "arrows": [
+            9,
+            9
+          ]
+        }
+      ]
+    }
+  ],
+  "shoot_offs": [],
+  "results": [
+    {
+      "scoresheet_id": "ss_101",
+      "sets": [
+        {
+          "set_number": 1,
+          "ring_sum": 49,
+          "set_points": 2
+        },
+        {
+          "set_number": 2,
+          "ring_sum": 46,
+          "set_points": 0
+        },
+        {
+          "set_number": 3,
+          "ring_sum": 42,
+          "set_points": 0
+        },
+        {
+          "set_number": 4,
+          "ring_sum": 43,
+          "set_points": 2
+        },
+        {
+          "set_number": 5,
+          "ring_sum": 51,
+          "set_points": 1
+        }
+      ],
+      "set_points_total": 5,
+      "match_points": null,
+      "decided": false,
+      "shoot_off_pending": true
+    },
+    {
+      "scoresheet_id": "ss_102",
+      "sets": [
+        {
+          "set_number": 1,
+          "ring_sum": 44,
+          "set_points": 0
+        },
+        {
+          "set_number": 2,
+          "ring_sum": 48,
+          "set_points": 2
+        },
+        {
+          "set_number": 3,
+          "ring_sum": 50,
+          "set_points": 2
+        },
+        {
+          "set_number": 4,
+          "ring_sum": 38,
+          "set_points": 0
+        },
+        {
+          "set_number": 5,
+          "ring_sum": 51,
+          "set_points": 1
+        }
+      ],
+      "set_points_total": 5,
+      "match_points": null,
+      "decided": false,
+      "shoot_off_pending": true
+    },
+    {
+      "scoresheet_id": "ss_103",
+      "sets": [
+        {
+          "set_number": 1,
+          "ring_sum": 43,
+          "set_points": 0
+        },
+        {
+          "set_number": 2,
+          "ring_sum": 45,
+          "set_points": 2
+        },
+        {
+          "set_number": 3,
+          "ring_sum": 45,
+          "set_points": 0
+        },
+        {
+          "set_number": 4,
+          "ring_sum": 49,
+          "set_points": 2
+        },
+        {
+          "set_number": 5,
+          "ring_sum": 48,
+          "set_points": 0
+        }
+      ],
+      "set_points_total": 4,
+      "match_points": 0,
+      "decided": true,
+      "shoot_off_pending": false
+    },
+    {
+      "scoresheet_id": "ss_104",
+      "sets": [
+        {
+          "set_number": 1,
+          "ring_sum": 57,
+          "set_points": 2
+        },
+        {
+          "set_number": 2,
+          "ring_sum": 39,
+          "set_points": 0
+        },
+        {
+          "set_number": 3,
+          "ring_sum": 48,
+          "set_points": 2
+        },
+        {
+          "set_number": 4,
+          "ring_sum": 33,
+          "set_points": 0
+        },
+        {
+          "set_number": 5,
+          "ring_sum": 53,
+          "set_points": 2
+        }
+      ],
+      "set_points_total": 6,
+      "match_points": 2,
+      "decided": true,
+      "shoot_off_pending": false
+    }
+  ],
+  "standings": {
+    "standings": []
+  }
+}

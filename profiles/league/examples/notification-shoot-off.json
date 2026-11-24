@@ -1,10 +1,10 @@
 {
-  "sequence": 120,
+  "sequence": 58,
   "sent_at": "2026-11-29T10:40:12+01:00",
-  "event_id": "ev_42",
+  "event_id": "ev_43",
   "type": "shoot_off.updated",
   "object": {
-    "scoresheet_id": "ss_101",
+    "scoresheet_id": "ss_102",
     "won": true
   }
 }

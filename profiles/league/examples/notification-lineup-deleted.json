@@ -4,6 +4,6 @@
   "event_id": "ev_42",
   "type": "lineup.deleted",
   "object": {
-    "scoresheet_id": "ss_101"
+    "scoresheet_id": "ss_301"
   }
 }

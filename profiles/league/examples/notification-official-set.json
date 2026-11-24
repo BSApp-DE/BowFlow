@@ -4,31 +4,31 @@
   "event_id": "ev_42",
   "type": "official_set.updated",
   "object": {
-    "scoresheet_id": "ss_101",
+    "scoresheet_id": "ss_204",
     "set_number": 2,
+    "penalty_points": 10,
     "shooters": [
       {
-        "start_number": 1,
+        "start_number": 5,
         "arrows": [
-          10,
-          9
+          7,
+          6
         ]
       },
       {
-        "start_number": 2,
+        "start_number": 4,
         "arrows": [
-          0,
+          9,
           8
         ]
       },
       {
         "start_number": 3,
         "arrows": [
-          9,
-          9
+          8,
+          6
         ]
       }
-    ],
-    "penalty_points": 0
+    ]
   }
 }

@@ -1,28 +1,33 @@
 {
   "team": {
-    "id": "t_1",
-    "name": "BSC Musterstadt 1"
+    "id": "t_5",
+    "name": "TSV Haselbach 5"
   },
   "members": [
     {
       "start_number": 1,
-      "first_name": "Max",
-      "last_name": "Mustermann"
+      "first_name": "Uwe",
+      "last_name": "Köhler"
     },
     {
       "start_number": 2,
-      "first_name": "Erika",
-      "last_name": "Muster"
+      "first_name": "Vera",
+      "last_name": "Mayer"
     },
     {
       "start_number": 3,
-      "first_name": "Hans",
-      "last_name": "Beispiel"
+      "first_name": "Walter",
+      "last_name": "Fuchs"
     },
     {
       "start_number": 4,
-      "first_name": "Anna",
-      "last_name": "Probe"
+      "first_name": "Xenia",
+      "last_name": "Scholz"
+    },
+    {
+      "start_number": 5,
+      "first_name": "Yannick",
+      "last_name": "Müller"
     }
   ]
 }

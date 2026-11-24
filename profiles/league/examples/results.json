@@ -3,17 +3,27 @@
   "sets": [
     {
       "set_number": 1,
-      "ring_sum": 52,
+      "ring_sum": 43,
       "set_points": 2
     },
     {
       "set_number": 2,
-      "ring_sum": 45,
+      "ring_sum": 36,
+      "set_points": 0
+    },
+    {
+      "set_number": 3,
+      "ring_sum": 43,
+      "set_points": 0
+    },
+    {
+      "set_number": 4,
+      "ring_sum": 43,
       "set_points": 0
     }
   ],
   "set_points_total": 2,
-  "match_points": null,
-  "decided": false,
+  "match_points": 0,
+  "decided": true,
   "shoot_off_pending": false
 }

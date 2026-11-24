@@ -12,3 +12,6 @@
 - {file: shoot-off.json, schema: "shoot-off.schema.json"}
 - {file: notification-shoot-off.json, schema: "core:notification.schema.json"}
 - {file: roster.json, schema: "roster.schema.json"}
+- {file: snapshot-knockout.json, schema: "snapshot.schema.json"}
+- {file: results-shoot-off-pending.json, schema: "results.schema.json"}
+- {file: results-shoot-off-decided.json, schema: "results.schema.json"}

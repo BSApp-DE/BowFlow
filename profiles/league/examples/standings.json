@@ -3,26 +3,98 @@
     {
       "rank": 1,
       "team": {
-        "id": "t_1",
-        "name": "BSC Musterstadt 1"
+        "id": "t_3",
+        "name": "Schützenverein Eichwald 3"
       },
-      "match_points_won": 8,
-      "match_points_lost": 4,
-      "set_points_won": 24,
-      "set_points_lost": 18,
-      "rank_change": 2
+      "match_points_won": 24,
+      "match_points_lost": 12,
+      "set_points_won": 93,
+      "set_points_lost": 69,
+      "rank_change": 0
     },
     {
       "rank": 2,
       "team": {
-        "id": "t_2",
-        "name": "SV Beispiel 2"
+        "id": "t_7",
+        "name": "SV Schwarzwald-Bogner 7"
       },
-      "match_points_won": 6,
-      "match_points_lost": 6,
-      "set_points_won": 20,
-      "set_points_lost": 20,
+      "match_points_won": 20,
+      "match_points_lost": 18,
+      "set_points_won": 82,
+      "set_points_lost": 80,
+      "rank_change": 0
+    },
+    {
+      "rank": 3,
+      "team": {
+        "id": "t_8",
+        "name": "Bogensportclub Weißtal 8"
+      },
+      "match_points_won": 20,
+      "match_points_lost": 16,
+      "set_points_won": 80,
+      "set_points_lost": 82,
+      "rank_change": 1
+    },
+    {
+      "rank": 4,
+      "team": {
+        "id": "t_4",
+        "name": "SC Goldener Bogen 4"
+      },
+      "match_points_won": 19,
+      "match_points_lost": 19,
+      "set_points_won": 87,
+      "set_points_lost": 83,
+      "rank_change": 2
+    },
+    {
+      "rank": 5,
+      "team": {
+        "id": "t_2",
+        "name": "BSC Blauer Pfeil 2"
+      },
+      "match_points_won": 19,
+      "match_points_lost": 17,
+      "set_points_won": 74,
+      "set_points_lost": 70,
+      "rank_change": -2
+    },
+    {
+      "rank": 6,
+      "team": {
+        "id": "t_5",
+        "name": "TSV Haselbach 5"
+      },
+      "match_points_won": 17,
+      "match_points_lost": 19,
+      "set_points_won": 76,
+      "set_points_lost": 72,
       "rank_change": -1
+    },
+    {
+      "rank": 7,
+      "team": {
+        "id": "t_6",
+        "name": "ASV Münzenberg 6"
+      },
+      "match_points_won": 16,
+      "match_points_lost": 20,
+      "set_points_won": 67,
+      "set_points_lost": 85,
+      "rank_change": 0
+    },
+    {
+      "rank": 8,
+      "team": {
+        "id": "t_1",
+        "name": "SV Adler Testheim 1"
+      },
+      "match_points_won": 11,
+      "match_points_lost": 25,
+      "set_points_won": 71,
+      "set_points_lost": 89,
+      "rank_change": 0
     }
   ]
 }

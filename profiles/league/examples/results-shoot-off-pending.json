@@ -1,0 +1,34 @@
+{
+  "scoresheet_id": "ss_101",
+  "sets": [
+    {
+      "set_number": 1,
+      "ring_sum": 49,
+      "set_points": 2
+    },
+    {
+      "set_number": 2,
+      "ring_sum": 46,
+      "set_points": 0
+    },
+    {
+      "set_number": 3,
+      "ring_sum": 42,
+      "set_points": 0
+    },
+    {
+      "set_number": 4,
+      "ring_sum": 43,
+      "set_points": 2
+    },
+    {
+      "set_number": 5,
+      "ring_sum": 51,
+      "set_points": 1
+    }
+  ],
+  "set_points_total": 5,
+  "match_points": null,
+  "decided": false,
+  "shoot_off_pending": true
+}

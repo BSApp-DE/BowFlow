@@ -1,23 +1,23 @@
 {
-  "scoresheet_id": "ss_101",
+  "scoresheet_id": "ss_201",
   "shooters": [
     {
       "position": 1,
       "start_number": 1,
-      "first_name": "Max",
-      "last_name": "Mustermann"
+      "first_name": "Jonas",
+      "last_name": "Berger"
     },
     {
       "position": 2,
-      "start_number": 2,
-      "first_name": "Erika",
-      "last_name": "Muster"
+      "start_number": 5,
+      "first_name": "Tobias",
+      "last_name": "Ebert"
     },
     {
       "position": 3,
-      "start_number": 3,
-      "first_name": "Hans",
-      "last_name": "Beispiel"
+      "start_number": 4,
+      "first_name": "Sofia",
+      "last_name": "Lenz"
     }
   ]
 }

@@ -1,13 +1,13 @@
 {
-  "scoresheet_id": "ss_101",
-  "set_number": 2,
+  "scoresheet_id": "ss_201",
+  "set_number": 3,
   "arrows": [
     10,
-    9,
-    0,
+    10,
     8,
-    null,
-    null
+    4,
+    8,
+    7
   ],
-  "closed": false
+  "closed": true
 }

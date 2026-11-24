@@ -1,7 +1,33 @@
 {
   "state": "RUNNING",
   "match_states": [
-    { "number": 1, "state": "ACTIVE" },
-    { "number": 2, "state": "LOCKED" }
+    {
+      "number": 1,
+      "state": "COMPLETED"
+    },
+    {
+      "number": 2,
+      "state": "ACTIVE"
+    },
+    {
+      "number": 3,
+      "state": "LOCKED"
+    },
+    {
+      "number": 4,
+      "state": "LOCKED"
+    },
+    {
+      "number": 5,
+      "state": "LOCKED"
+    },
+    {
+      "number": 6,
+      "state": "LOCKED"
+    },
+    {
+      "number": 7,
+      "state": "LOCKED"
+    }
   ]
 }

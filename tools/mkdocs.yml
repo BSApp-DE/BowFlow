@@ -1,0 +1,31 @@
+# Baut die Markdown-Doku (README, GOVERNANCE, core/docs, profiles/*/docs) als Website.
+# docs_dir ist das Repo selbst: Die relativen Links zwischen den Dateien bleiben so gültig,
+# und .json-Schemas/Beispiele werden als statische Dateien mitgeliefert.
+# Neue Profile erscheinen automatisch in der Navigation.
+site_name: BowFlow Spezifikation
+docs_dir: ..
+site_dir: ../_site/doku
+use_directory_urls: true
+exclude_docs: |
+  /tools/
+  /.github/
+  /_site/
+  /.venv/
+  /node_modules/
+theme:
+  name: material
+  language: de
+  features:
+    - navigation.sections
+    - content.code.copy
+extra:
+  generator: false
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

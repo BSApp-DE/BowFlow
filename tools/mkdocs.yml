@@ -4,7 +4,6 @@
 # Neue Profile erscheinen automatisch in der Navigation.
 site_name: BowFlow Spezifikation
 docs_dir: ..
-site_dir: ../_site/doku
 use_directory_urls: true
 exclude_docs: |
   /tools/

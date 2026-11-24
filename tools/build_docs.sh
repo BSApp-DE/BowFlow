@@ -23,7 +23,10 @@ for spec in "${specs[@]}"; do
   items+="<li><a href=\"$name/\">$title</a> <small>$version · <a href=\"$name/openapi.yaml\">openapi.yaml</a></small></li>"$'\n'
 done
 
-mkdocs build -q -f tools/mkdocs.yml
+# site_dir darf nicht im docs_dir (= Repo) liegen, daher erst außerhalb bauen und dann verschieben
+tmp=$(mktemp -d)
+mkdocs build -q -f tools/mkdocs.yml -d "$tmp/doku"
+mv "$tmp/doku" "$out/doku"
 
 cat > "$out/index.html" <<HTML
 <!doctype html>

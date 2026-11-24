@@ -5,10 +5,11 @@ info:
   description: Objekte des Profils `league` (Liga-Wettkämpfe). Beitritt und Webhook stehen im Kern. Alles läuft
     über die Liga App.
 servers:
-- url: '{base_url}/bowflow/v1'
+- url: https://{host}/bowflow/v1
   variables:
-    base_url:
-      default: https://league.example.org
+    host:
+      default: league.example.org
+      description: Adresse der Verwaltungs-App (`base_url` in der Doku ist `https://{host}`).
 paths:
   /events/{event_id}/snapshot:
     get:

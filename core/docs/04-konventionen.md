@@ -8,7 +8,7 @@
 - Natürliche Schlüssel (zum Beispiel Scheibennummer, Satznummer) sind Ganzzahlen und gehören zum Profil.
 - Zeitstempel: ISO 8601 mit Zeitzone. Datum: `YYYY-MM-DD`.
 - Unbekannte Felder und unbekannte Benachrichtigungs-Typen ignorieren Empfänger.
-- Basis-Pfad: `{base_url}/bowflow/v1`. Der Wettkampf steckt im Pfad: `/events/{event_id}/...`.
+- Basis-Pfad: `{base_url}/bowflow/v1`. `{base_url}` ist die Adresse der Verwaltungs-App, also `https://<host>`. Der Wettkampf steckt im Pfad: `/events/{event_id}/...`.
 
 ## Fehler
 

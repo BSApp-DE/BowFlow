@@ -5,10 +5,11 @@ info:
   description: Beitritt, Benachrichtigungen und die Regeln des Snapshots. Gilt für jedes Profil. Die Objekte, ihre
     Pfade und der Pfad und Inhalt des Snapshots legt das Profil fest.
 servers:
-- url: '{base_url}/bowflow/v1'
+- url: https://{host}/bowflow/v1
   variables:
-    base_url:
-      default: https://league.example.org
+    host:
+      default: league.example.org
+      description: Adresse der Verwaltungs-App (`base_url` in der Doku ist `https://{host}`).
 paths:
   /join:
     post:

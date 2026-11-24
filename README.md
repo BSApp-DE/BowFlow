@@ -6,6 +6,8 @@ Status: Entwurf 1.0. Arbeitstitel „BowFlow".
 
 Online lesen: **<https://bsapp-de.github.io/BowFlow/>** mit [Dokumentation](https://bsapp-de.github.io/BowFlow/doku/) und API-Referenz ([Kern](https://bsapp-de.github.io/BowFlow/core/), [league](https://bsapp-de.github.io/BowFlow/league/)).
 
+Eine Implementierung lässt sich mit `python tools/check.py` auf Konformität prüfen, siehe [Implementierungen prüfen](core/docs/07-pruefung.md).
+
 ## Aufbau: Kern und Profile
 
 Die Spezifikation besteht aus einem **Kern** und **Profilen**.

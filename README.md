@@ -4,6 +4,8 @@ Offene Schnittstellen-Definition, über die Apps bei Bogensport-Wettkämpfen Dat
 
 Status: Entwurf 1.0. Arbeitstitel „BowFlow".
 
+Online lesen: **<https://bsapp-de.github.io/BowFlow/>** mit [Dokumentation](https://bsapp-de.github.io/BowFlow/doku/) und API-Referenz ([Kern](https://bsapp-de.github.io/BowFlow/core/), [league](https://bsapp-de.github.io/BowFlow/league/)).
+
 ## Aufbau: Kern und Profile
 
 Die Spezifikation besteht aus einem **Kern** und **Profilen**.

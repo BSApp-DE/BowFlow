@@ -39,7 +39,7 @@ Die Antwort nennt das **Profil** des Wettkampfs, zum Beispiel `league`. Es legt 
 ## Webhook-Signatur
 
 - Zusammen mit dem Token bekommt die App ein `webhook_secret`.
-- Die Verwaltungs-App signiert jeden Webhook: Header `X-Interop-Signature: sha256=<HMAC-SHA256 des Bodys mit dem webhook_secret, hexadezimal>`.
+- Die Verwaltungs-App signiert jeden Webhook: Header `X-BowFlow-Signature: sha256=<HMAC-SHA256 des Bodys mit dem webhook_secret, hexadezimal>`.
 - Die App prüft die Signatur und verwirft Webhooks ohne gültige Signatur.
 
 ## Link-Vorlagen

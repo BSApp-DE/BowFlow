@@ -1,11 +1,11 @@
 openapi: 3.1.0
 info:
-  title: BowFlow Interop API – Kern
+  title: BowFlow API – Kern
   version: 1.0.0-draft
   description: Beitritt und Benachrichtigungen. Gilt für jedes Profil. Die Objekte und ihre Pfade legt das Profil
     fest.
 servers:
-- url: '{base_url}/interop/v1'
+- url: '{base_url}/bowflow/v1'
   variables:
     base_url:
       default: https://league.example.org
@@ -43,7 +43,7 @@ webhooks:
     post:
       summary: Benachrichtigung der Verwaltungs-App an eine verbundene App
       description: 'Gesendet an die beim Beitritt angegebene `webhook_url`. Nie an die App, die die Änderung geschrieben
-        hat. Header `X-Interop-Signature: sha256=<HMAC-SHA256 des Bodys mit dem webhook_secret, hexadezimal>`. Antwort
+        hat. Header `X-BowFlow-Signature: sha256=<HMAC-SHA256 des Bodys mit dem webhook_secret, hexadezimal>`. Antwort
         `2xx` quittiert; sonst Wiederholung nach 5 s, 30 s, 2 min, 10 min, 30 min, 1 h.'
       requestBody:
         required: true

@@ -2,7 +2,7 @@
 
 Nur Objekte, die zwischen Apps ausgetauscht werden. Was eine App intern speichert (Anzeigezustände, Tokens der Handys, Kampfrichterbericht), steht hier nicht. Schemas: [`schemas/`](../schemas/), Beispiele: [`examples/`](../examples/).
 
-Pfade relativ zu `{base_url}/interop/v1/events/{event_id}`.
+Pfade relativ zu `{base_url}/bowflow/v1/events/{event_id}`.
 
 | Objekt | Pfad | Verbundene App | Schema |
 |---|---|---|---|

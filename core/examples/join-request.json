@@ -5,7 +5,7 @@
     "version": "2.3.0"
   },
   "device_name": "Tablet Halle",
-  "webhook_url": "https://scoring.example.org/interop/v1/webhook",
+  "webhook_url": "https://scoring.example.org/bowflow/v1/webhook",
   "link_templates": {
     "scoresheet": "https://scoring.example.org/score/9f2c1d7e-0a5b-4c3e-8d2f-6b1a7c9e4f10/{scoresheet_id}"
   }

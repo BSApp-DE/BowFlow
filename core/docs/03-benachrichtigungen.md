@@ -26,7 +26,7 @@
 - `type`: `<objekt>.updated` oder `<objekt>.deleted`. Die erlaubten Typen legt das [Profil](05-profile.md) fest.
 - `sequence`: fortlaufend **je Empfänger**, beginnt bei 1. Wiederholungen derselben Benachrichtigung tragen dieselbe Nummer.
 - `object`: das vollständige geänderte Objekt. Bei `*.deleted` nur die Schlüsselfelder.
-- Header `X-Interop-Signature`, siehe [Beitritt](02-beitritt.md).
+- Header `X-BowFlow-Signature`, siehe [Beitritt](02-beitritt.md).
 
 ## Zustellung
 

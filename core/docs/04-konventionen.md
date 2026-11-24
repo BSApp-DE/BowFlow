@@ -8,7 +8,7 @@
 - Natürliche Schlüssel (zum Beispiel Scheibennummer, Satznummer) sind Ganzzahlen und gehören zum Profil.
 - Zeitstempel: ISO 8601 mit Zeitzone. Datum: `YYYY-MM-DD`.
 - Unbekannte Felder und unbekannte Benachrichtigungs-Typen ignorieren Empfänger.
-- Basis-Pfad: `{base_url}/interop/v1`. Der Wettkampf steckt im Pfad: `/events/{event_id}/...`.
+- Basis-Pfad: `{base_url}/bowflow/v1`. Der Wettkampf steckt im Pfad: `/events/{event_id}/...`.
 
 ## Fehler
 
@@ -28,4 +28,4 @@ Eine App, die mitten im Wettkampf `UNAUTHORIZED` erhält, wurde getrennt oder da
 
 ## Versionierung
 
-Die Version steht im Pfad (`/interop/v1`). Innerhalb einer Hauptversion sind nur additive Änderungen erlaubt, siehe [GOVERNANCE.md](../../GOVERNANCE.md).
+Die Version steht im Pfad (`/bowflow/v1`). Innerhalb einer Hauptversion sind nur additive Änderungen erlaubt, siehe [GOVERNANCE.md](../../GOVERNANCE.md).

@@ -1,11 +1,11 @@
 openapi: 3.1.0
 info:
-  title: BowFlow Interop API – Profil league
+  title: BowFlow API – Profil league
   version: 1.0.0-draft
   description: Objekte des Profils `league` (Liga-Wettkämpfe). Beitritt und Webhook stehen im Kern. Alles läuft
     über die Liga App.
 servers:
-- url: '{base_url}/interop/v1'
+- url: '{base_url}/bowflow/v1'
   variables:
     base_url:
       default: https://league.example.org

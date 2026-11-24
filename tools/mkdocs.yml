@@ -16,8 +16,8 @@ theme:
   name: material
   language: de
   font: false
-  logo: tools/theme/logo.png
-  favicon: tools/theme/logo.png
+  logo: tools/theme/logo.svg
+  favicon: tools/theme/logo.svg
   features:
     - navigation.sections
     - content.code.copy

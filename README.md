@@ -1,6 +1,6 @@
 # BowFlow
 
-Offene Schnittstellen-Definition, über die Apps bei Bogensport-Wettkämpfen Daten austauschen, zum Beispiel Liga App, Scoring App (digitaler Schusszettel) und Spotter App (Pfeilwerte live). Die Spezifikation beschreibt den technischen Ablauf und die Objekte, die zwischen den Apps ausgetauscht werden. Namen wie Bennu (Liga), SiaScore (Scoring) und Fawkes (Spotter) stehen nur als Beispiele.
+Offene Schnittstellen-Definition, über die Apps bei Bogensport-Wettkämpfen Daten austauschen, zum Beispiel Liga App, Scoring App (digitaler Schusszettel) und Spotter App (Pfeilwerte live). Die Spezifikation beschreibt den technischen Ablauf und die Objekte, die zwischen den Apps ausgetauscht werden. Namen wie Bennu und BuLiBowApp (Liga), SiaScore (Scoring) und Fawkes (Spotter) stehen nur als Beispiele.
 
 Status: Entwurf 1.0. Arbeitstitel „BowFlow".
 

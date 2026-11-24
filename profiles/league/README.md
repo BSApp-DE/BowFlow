@@ -1,6 +1,6 @@
 # Profil `league` · Liga-Wettkämpfe
 
-Satzsystem mit Mannschaften: 3 Schützen mit je 2 Pfeilen pro Satz, Matches mit mehreren gleichzeitigen Begegnungen, Tabelle. Die Verwaltungs-App ist die **Liga App** (Beispiel: Bennu). Verbundene Apps sind zum Beispiel eine Scoring App (SiaScore) und eine Spotter App (Fawkes).
+Satzsystem mit Mannschaften: 3 Schützen mit je 2 Pfeilen pro Satz, Matches mit mehreren gleichzeitigen Begegnungen, Tabelle. Die Verwaltungs-App ist die **Liga App** (Beispiele: Bennu, BuLiBowApp). Verbundene Apps sind zum Beispiel eine Scoring App (SiaScore) und eine Spotter App (Fawkes).
 
 Der Beitritt, die Webhooks und der Snapshot kommen aus dem [Kern](../../README.md). Dieses Profil legt die Objekte und den Ablauf fest.
 

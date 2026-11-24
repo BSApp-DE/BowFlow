@@ -6,7 +6,7 @@ Der Kern beschreibt, **wie** Apps bei einem Wettkampf Daten austauschen. **Was**
 
 | Teilnehmer | Aufgabe |
 |---|---|
-| **Verwaltungs-App** | Gibt es bei jedem Wettkampf genau einmal. Sie ist die Wahrheit für Planung und Ergebnisse, speichert alle geteilten Objekte und verteilt Änderungen. Im Profil `league` ist das die Liga App (Beispiel: Bennu). |
+| **Verwaltungs-App** | Gibt es bei jedem Wettkampf genau einmal. Sie ist die Wahrheit für Planung und Ergebnisse, speichert alle geteilten Objekte und verteilt Änderungen. Im Profil `league` ist das die Liga App (Beispiele: Bennu, BuLiBowApp). |
 | **Verbundene App** | Jede andere App, die an einem Wettkampf teilnimmt, zum Beispiel eine Scoring App (SiaScore) oder eine Spotter App (Fawkes). Eine App kann mehrere Aufgaben vereinen. |
 
 Es gibt keine festen Rollen für verbundene Apps. Das Protokoll unterscheidet nur zwischen Verwaltungs-App und verbundener App.

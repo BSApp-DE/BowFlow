@@ -4,7 +4,7 @@
 
 | Teilnehmer | Aufgabe im Liga-Profil |
 |---|---|
-| **Liga App** | Gibt es bei jedem Liga-Wettkampf. Hält den Spielplan, rechnet Ergebnisse und Tabelle, speichert alle geteilten Objekte. Beispiel: Bennu. |
+| **Liga App** | Gibt es bei jedem Liga-Wettkampf. Hält den Spielplan, rechnet Ergebnisse und Tabelle, speichert alle geteilten Objekte. Beispiele: Bennu, BuLiBowApp. |
 | **Verbundene App** | Zum Beispiel die Scoring App (digitaler Schusszettel, Kampfrichter) oder die Spotter App (Pfeile live, Displays). Beispiele: SiaScore, Fawkes. Kombi-Apps sind möglich. |
 
 ## Zugriffsarten

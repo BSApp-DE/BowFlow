@@ -9,21 +9,21 @@
     "penalty_points": 10,
     "athletes": [
       {
-        "start_number": 5,
+        "bib": 5,
         "arrows": [
           7,
           6
         ]
       },
       {
-        "start_number": 4,
+        "bib": 4,
         "arrows": [
           9,
           8
         ]
       },
       {
-        "start_number": 3,
+        "bib": 3,
         "arrows": [
           8,
           6

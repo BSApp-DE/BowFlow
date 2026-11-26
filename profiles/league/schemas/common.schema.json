@@ -17,7 +17,7 @@
       "type": "integer",
       "minimum": 1
     },
-    "StartNumber": {
+    "Bib": {
       "type": "integer",
       "minimum": 1,
       "description": "Startnummer des Schützen in der Mannschaft; immer ab 1, ohne Lücken."

@@ -19,14 +19,14 @@
       "items": {
         "type": "object",
         "required": [
-          "start_number",
+          "bib",
           "first_name",
           "last_name"
         ],
         "additionalProperties": false,
         "properties": {
-          "start_number": {
-            "$ref": "common.schema.json#/$defs/StartNumber"
+          "bib": {
+            "$ref": "common.schema.json#/$defs/Bib"
           },
           "first_name": {
             "type": "string",

@@ -11,7 +11,7 @@
 | Scheibe | Physische Scheibe | `target_number` |
 | Schütze | Teilnehmer einer Mannschaft. Englisch bewusst `athlete`, weil „shooter" im Englischen oft an Militär oder Jagd erinnert. | `athlete` (Listen: `athletes`) |
 | Satz | 3 Schützen mit je 2 Pfeilen | `set_number` |
-| Startnummer | Nummer des Schützen in der Mannschaft, ab 1 ohne Lücken | `start_number` |
+| Startnummer | Nummer des Schützen in der Mannschaft, ab 1 ohne Lücken | `bib` |
 | Schützenliste | Alle Schützen einer Mannschaft mit Startnummer und Name; Grundlage für die Meldung | `roster` |
 | Meldung | Die 3 Schützen eines Schusszettels | `lineup` |
 | Strafpunkte | Abzug von der Ringsumme, pro Mannschaft und Satz | `penalty_points` |

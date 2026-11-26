@@ -5,27 +5,27 @@
   },
   "members": [
     {
-      "start_number": 1,
+      "bib": 1,
       "first_name": "Uwe",
       "last_name": "Köhler"
     },
     {
-      "start_number": 2,
+      "bib": 2,
       "first_name": "Vera",
       "last_name": "Mayer"
     },
     {
-      "start_number": 3,
+      "bib": 3,
       "first_name": "Walter",
       "last_name": "Fuchs"
     },
     {
-      "start_number": 4,
+      "bib": 4,
       "first_name": "Xenia",
       "last_name": "Scholz"
     },
     {
-      "start_number": 5,
+      "bib": 5,
       "first_name": "Yannick",
       "last_name": "Müller"
     }

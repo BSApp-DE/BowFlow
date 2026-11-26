@@ -48,7 +48,7 @@ def split(name: str) -> tuple[str, str]:
 
 def roster(tid: str) -> dict:
     return {"team": {"id": tid, "name": TEAMS[tid][0]}, "members": [
-        {"start_number": i, "first_name": split(n)[0], "last_name": split(n)[1]} for i, n in enumerate(TEAMS[tid][1], start=1)]}
+        {"bib": i, "first_name": split(n)[0], "last_name": split(n)[1]} for i, n in enumerate(TEAMS[tid][1], start=1)]}
 
 
 def round_robin(n: int) -> list[list[tuple[int, int]]]:
@@ -82,7 +82,7 @@ def lineup(rng: random.Random, sid: str, tid: str) -> dict:
     members = TEAMS[tid][1]
     chosen = rng.sample(range(len(members)), ATHLETES)
     return {"scoresheet_id": sid, "athletes": [
-        {"position": pos, "start_number": n + 1, "first_name": split(members[n])[0], "last_name": split(members[n])[1]}
+        {"position": pos, "bib": n + 1, "first_name": split(members[n])[0], "last_name": split(members[n])[1]}
         for pos, n in enumerate(chosen, start=1)]}
 
 
@@ -106,7 +106,7 @@ def play_pair(rng, a: str, b: str, max_sets: int, teams: dict[str, str], lineups
             pen = (penalties or {}).get((sid, n), 0)
             athletes = arrows_for_set(rng, strength[teams[sid]])
             official[(sid, n)] = {"scoresheet_id": sid, "set_number": n, "penalty_points": pen, "athletes": [
-                {"start_number": lineups[sid]["athletes"][i]["start_number"], "arrows": arr} for i, arr in enumerate(athletes)]}
+                {"bib": lineups[sid]["athletes"][i]["bib"], "arrows": arr} for i, arr in enumerate(athletes)]}
             ring[sid] = sum(sum(arr) for arr in athletes) - pen
         if ring[a] != ring[b]:
             total[a if ring[a] > ring[b] else b] += 2

@@ -50,10 +50,10 @@ Objekt `competition_plan`. Wettkampftag (`id`, `name`, `date`; optional `league_
 
 ## Schützenliste
 
-`team` (`id`, `name`) und `members` mit `start_number`, `first_name` und `last_name`.
+`team` (`id`, `name`) und `members` mit `bib`, `first_name` und `last_name`.
 
 - Die Liste enthält alle Schützen, die für die Mannschaft gemeldet werden können. Die Scoring App wählt daraus beim Melden die 3 Schützen aus.
-- Ein Schütze ist über Mannschaft und `start_number` eindeutig. Es gibt keine Mitglieds-IDs.
+- Ein Schütze ist über Mannschaft und `bib` eindeutig. Es gibt keine Mitglieds-IDs.
 - Vor- und Nachname sind getrennte Felder, damit jede App die Anzeige nach Region wählen kann („Vorname Nachname“ oder „Nachname, Vorname“). Beide sind Pflicht.
 - Nur die Liga schreibt die Liste, verbundene App lesen sie. Ändert die Liga sie, schickt sie `roster.updated`.
 - Die Spotter App braucht die Liste nicht: Sie bekommt Namen und Startnummern mit der [Meldung](#meldung).
@@ -68,9 +68,9 @@ Objekt `competition_plan`. Wettkampftag (`id`, `name`, `date`; optional `league_
 
 ## Meldung
 
-`scoresheet_id` und `athletes` mit `position` (Schussreihenfolge), `start_number`, `first_name` und `last_name`.
+`scoresheet_id` und `athletes` mit `position` (Schussreihenfolge), `bib`, `first_name` und `last_name`.
 
-- Ein Schütze ist über Mannschaft (steckt im Schusszettel) und `start_number` eindeutig. Startnummern laufen immer ab 1 ohne Lücken.
+- Ein Schütze ist über Mannschaft (steckt im Schusszettel) und `bib` eindeutig. Startnummern laufen immer ab 1 ohne Lücken.
 - Zurücksetzen (`DELETE`) ist nur sinnvoll, solange noch keine Pfeile erfasst sind. Das prüft die schreibende App.
 - **Ohne Meldung** gelten die Startnummern 1, 2, 3 (so viele wie `athletes_per_team`). Das gilt auch für abwesende Mannschaften.
 
@@ -86,7 +86,7 @@ Objekt `competition_plan`. Wettkampftag (`id`, `name`, `date`; optional `league_
 
 ## Offizieller Satz
 
-`scoresheet_id`, `set_number`, `athletes` (je `start_number` und `arrows`) und `penalty_points`.
+`scoresheet_id`, `set_number`, `athletes` (je `bib` und `arrows`) und `penalty_points`.
 
 - Mit dem Speichern ist der Satz fixiert, und die Liga rechnet neu.
 - `penalty_points` gelten für die Mannschaft im Satz und werden von der Ringsumme abgezogen.

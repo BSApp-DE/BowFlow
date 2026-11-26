@@ -119,27 +119,27 @@
       },
       "members": [
         {
-          "start_number": 1,
+          "bib": 1,
           "first_name": "Jonas",
           "last_name": "Berger"
         },
         {
-          "start_number": 2,
+          "bib": 2,
           "first_name": "Lea",
           "last_name": "Kaiser"
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "first_name": "Murat",
           "last_name": "Yildiz"
         },
         {
-          "start_number": 4,
+          "bib": 4,
           "first_name": "Sofia",
           "last_name": "Lenz"
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "first_name": "Tobias",
           "last_name": "Ebert"
         }
@@ -152,27 +152,27 @@
       },
       "members": [
         {
-          "start_number": 1,
+          "bib": 1,
           "first_name": "Anja",
           "last_name": "Vogel"
         },
         {
-          "start_number": 2,
+          "bib": 2,
           "first_name": "Ben",
           "last_name": "Hahn"
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "first_name": "Carla",
           "last_name": "Roth"
         },
         {
-          "start_number": 4,
+          "bib": 4,
           "first_name": "Dennis",
           "last_name": "Pohl"
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "first_name": "Elif",
           "last_name": "Kaya"
         }
@@ -185,27 +185,27 @@
       },
       "members": [
         {
-          "start_number": 1,
+          "bib": 1,
           "first_name": "Frank",
           "last_name": "Seidel"
         },
         {
-          "start_number": 2,
+          "bib": 2,
           "first_name": "Greta",
           "last_name": "Lang"
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "first_name": "Hannes",
           "last_name": "Brandt"
         },
         {
-          "start_number": 4,
+          "bib": 4,
           "first_name": "Ines",
           "last_name": "Krause"
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "first_name": "Jörg",
           "last_name": "Winter"
         }
@@ -218,27 +218,27 @@
       },
       "members": [
         {
-          "start_number": 1,
+          "bib": 1,
           "first_name": "Katrin",
           "last_name": "Beck"
         },
         {
-          "start_number": 2,
+          "bib": 2,
           "first_name": "Lukas",
           "last_name": "Fischer"
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "first_name": "Mia",
           "last_name": "Schulte"
         },
         {
-          "start_number": 4,
+          "bib": 4,
           "first_name": "Nils",
           "last_name": "Arnold"
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "first_name": "Olga",
           "last_name": "Petrova"
         }
@@ -251,19 +251,19 @@
       "athletes": [
         {
           "position": 1,
-          "start_number": 3,
+          "bib": 3,
           "first_name": "Murat",
           "last_name": "Yildiz"
         },
         {
           "position": 2,
-          "start_number": 5,
+          "bib": 5,
           "first_name": "Tobias",
           "last_name": "Ebert"
         },
         {
           "position": 3,
-          "start_number": 4,
+          "bib": 4,
           "first_name": "Sofia",
           "last_name": "Lenz"
         }
@@ -274,19 +274,19 @@
       "athletes": [
         {
           "position": 1,
-          "start_number": 2,
+          "bib": 2,
           "first_name": "Ben",
           "last_name": "Hahn"
         },
         {
           "position": 2,
-          "start_number": 5,
+          "bib": 5,
           "first_name": "Elif",
           "last_name": "Kaya"
         },
         {
           "position": 3,
-          "start_number": 3,
+          "bib": 3,
           "first_name": "Carla",
           "last_name": "Roth"
         }
@@ -297,19 +297,19 @@
       "athletes": [
         {
           "position": 1,
-          "start_number": 2,
+          "bib": 2,
           "first_name": "Greta",
           "last_name": "Lang"
         },
         {
           "position": 2,
-          "start_number": 5,
+          "bib": 5,
           "first_name": "Jörg",
           "last_name": "Winter"
         },
         {
           "position": 3,
-          "start_number": 3,
+          "bib": 3,
           "first_name": "Hannes",
           "last_name": "Brandt"
         }
@@ -320,19 +320,19 @@
       "athletes": [
         {
           "position": 1,
-          "start_number": 2,
+          "bib": 2,
           "first_name": "Lukas",
           "last_name": "Fischer"
         },
         {
           "position": 2,
-          "start_number": 5,
+          "bib": 5,
           "first_name": "Olga",
           "last_name": "Petrova"
         },
         {
           "position": 3,
-          "start_number": 1,
+          "bib": 1,
           "first_name": "Katrin",
           "last_name": "Beck"
         }
@@ -347,21 +347,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             8,
             9
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             8,
             8
           ]
         },
         {
-          "start_number": 4,
+          "bib": 4,
           "arrows": [
             10,
             6
@@ -375,21 +375,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             10,
             10
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             7,
             6
           ]
         },
         {
-          "start_number": 4,
+          "bib": 4,
           "arrows": [
             7,
             6
@@ -403,21 +403,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             6,
             5
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             8,
             8
           ]
         },
         {
-          "start_number": 4,
+          "bib": 4,
           "arrows": [
             9,
             6
@@ -431,21 +431,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             6,
             7
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             8,
             7
           ]
         },
         {
-          "start_number": 4,
+          "bib": 4,
           "arrows": [
             8,
             7
@@ -459,21 +459,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             9,
             10
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             9,
             9
           ]
         },
         {
-          "start_number": 4,
+          "bib": 4,
           "arrows": [
             8,
             6
@@ -487,21 +487,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             8,
             4
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             9,
             7
           ]
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             7,
             9
@@ -515,21 +515,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             7,
             8
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             7,
             9
           ]
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             8,
             9
@@ -543,21 +543,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             10,
             6
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             9,
             7
           ]
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             10,
             8
@@ -571,21 +571,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             7,
             6
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             7,
             9
           ]
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             0,
             9
@@ -599,21 +599,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             8,
             10
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             8,
             8
           ]
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             10,
             7
@@ -627,21 +627,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             7,
             8
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             9,
             10
           ]
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             9,
             0
@@ -655,21 +655,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             8,
             8
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             5,
             9
           ]
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             7,
             8
@@ -683,21 +683,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             10,
             6
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             5,
             6
           ]
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             9,
             9
@@ -711,21 +711,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             7,
             10
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             8,
             9
           ]
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             6,
             9
@@ -739,21 +739,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             10,
             9
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             7,
             7
           ]
         },
         {
-          "start_number": 3,
+          "bib": 3,
           "arrows": [
             8,
             7
@@ -767,21 +767,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             9,
             10
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             8,
             10
           ]
         },
         {
-          "start_number": 1,
+          "bib": 1,
           "arrows": [
             10,
             10
@@ -795,21 +795,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             10,
             7
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             0,
             9
           ]
         },
         {
-          "start_number": 1,
+          "bib": 1,
           "arrows": [
             7,
             6
@@ -823,21 +823,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             8,
             9
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             6,
             8
           ]
         },
         {
-          "start_number": 1,
+          "bib": 1,
           "arrows": [
             9,
             8
@@ -851,21 +851,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             9,
             8
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             10,
             0
           ]
         },
         {
-          "start_number": 1,
+          "bib": 1,
           "arrows": [
             0,
             6
@@ -879,21 +879,21 @@
       "penalty_points": 0,
       "athletes": [
         {
-          "start_number": 2,
+          "bib": 2,
           "arrows": [
             8,
             9
           ]
         },
         {
-          "start_number": 5,
+          "bib": 5,
           "arrows": [
             10,
             8
           ]
         },
         {
-          "start_number": 1,
+          "bib": 1,
           "arrows": [
             9,
             9

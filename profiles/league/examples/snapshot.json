@@ -18,8 +18,8 @@
     "rules": {
       "mode": "LEAGUE",
       "sets_per_match": 5,
-      "shooters_per_team": 3,
-      "arrows_per_shooter_per_set": 2,
+      "athletes_per_team": 3,
+      "arrows_per_athlete_per_set": 2,
       "points_to_win": 6
     },
     "matches": [
@@ -810,7 +810,7 @@
   "lineups": [
     {
       "scoresheet_id": "ss_101",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 2,
@@ -833,7 +833,7 @@
     },
     {
       "scoresheet_id": "ss_102",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 5,
@@ -856,7 +856,7 @@
     },
     {
       "scoresheet_id": "ss_103",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 5,
@@ -879,7 +879,7 @@
     },
     {
       "scoresheet_id": "ss_104",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 1,
@@ -902,7 +902,7 @@
     },
     {
       "scoresheet_id": "ss_105",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 5,
@@ -925,7 +925,7 @@
     },
     {
       "scoresheet_id": "ss_106",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 4,
@@ -948,7 +948,7 @@
     },
     {
       "scoresheet_id": "ss_107",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 2,
@@ -971,7 +971,7 @@
     },
     {
       "scoresheet_id": "ss_108",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 2,
@@ -994,7 +994,7 @@
     },
     {
       "scoresheet_id": "ss_201",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 1,
@@ -1017,7 +1017,7 @@
     },
     {
       "scoresheet_id": "ss_202",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 5,
@@ -1040,7 +1040,7 @@
     },
     {
       "scoresheet_id": "ss_203",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 1,
@@ -1063,7 +1063,7 @@
     },
     {
       "scoresheet_id": "ss_204",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 5,
@@ -1086,7 +1086,7 @@
     },
     {
       "scoresheet_id": "ss_205",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 4,
@@ -1109,7 +1109,7 @@
     },
     {
       "scoresheet_id": "ss_206",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 5,
@@ -1132,7 +1132,7 @@
     },
     {
       "scoresheet_id": "ss_207",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 3,
@@ -1155,7 +1155,7 @@
     },
     {
       "scoresheet_id": "ss_208",
-      "shooters": [
+      "athletes": [
         {
           "position": 1,
           "start_number": 2,
@@ -1236,7 +1236,7 @@
       "scoresheet_id": "ss_101",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 2,
           "arrows": [
@@ -1264,7 +1264,7 @@
       "scoresheet_id": "ss_101",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 2,
           "arrows": [
@@ -1292,7 +1292,7 @@
       "scoresheet_id": "ss_101",
       "set_number": 3,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 2,
           "arrows": [
@@ -1320,7 +1320,7 @@
       "scoresheet_id": "ss_101",
       "set_number": 4,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 2,
           "arrows": [
@@ -1348,7 +1348,7 @@
       "scoresheet_id": "ss_102",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1376,7 +1376,7 @@
       "scoresheet_id": "ss_102",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1404,7 +1404,7 @@
       "scoresheet_id": "ss_102",
       "set_number": 3,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1432,7 +1432,7 @@
       "scoresheet_id": "ss_102",
       "set_number": 4,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1460,7 +1460,7 @@
       "scoresheet_id": "ss_103",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1488,7 +1488,7 @@
       "scoresheet_id": "ss_103",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1516,7 +1516,7 @@
       "scoresheet_id": "ss_103",
       "set_number": 3,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1544,7 +1544,7 @@
       "scoresheet_id": "ss_103",
       "set_number": 4,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1572,7 +1572,7 @@
       "scoresheet_id": "ss_103",
       "set_number": 5,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1600,7 +1600,7 @@
       "scoresheet_id": "ss_104",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 1,
           "arrows": [
@@ -1628,7 +1628,7 @@
       "scoresheet_id": "ss_104",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 1,
           "arrows": [
@@ -1656,7 +1656,7 @@
       "scoresheet_id": "ss_104",
       "set_number": 3,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 1,
           "arrows": [
@@ -1684,7 +1684,7 @@
       "scoresheet_id": "ss_104",
       "set_number": 4,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 1,
           "arrows": [
@@ -1712,7 +1712,7 @@
       "scoresheet_id": "ss_104",
       "set_number": 5,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 1,
           "arrows": [
@@ -1740,7 +1740,7 @@
       "scoresheet_id": "ss_105",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1768,7 +1768,7 @@
       "scoresheet_id": "ss_105",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1796,7 +1796,7 @@
       "scoresheet_id": "ss_105",
       "set_number": 3,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1824,7 +1824,7 @@
       "scoresheet_id": "ss_105",
       "set_number": 4,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -1852,7 +1852,7 @@
       "scoresheet_id": "ss_106",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 4,
           "arrows": [
@@ -1880,7 +1880,7 @@
       "scoresheet_id": "ss_106",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 4,
           "arrows": [
@@ -1908,7 +1908,7 @@
       "scoresheet_id": "ss_106",
       "set_number": 3,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 4,
           "arrows": [
@@ -1936,7 +1936,7 @@
       "scoresheet_id": "ss_106",
       "set_number": 4,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 4,
           "arrows": [
@@ -1964,7 +1964,7 @@
       "scoresheet_id": "ss_107",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 2,
           "arrows": [
@@ -1992,7 +1992,7 @@
       "scoresheet_id": "ss_107",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 2,
           "arrows": [
@@ -2020,7 +2020,7 @@
       "scoresheet_id": "ss_107",
       "set_number": 3,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 2,
           "arrows": [
@@ -2048,7 +2048,7 @@
       "scoresheet_id": "ss_108",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 2,
           "arrows": [
@@ -2076,7 +2076,7 @@
       "scoresheet_id": "ss_108",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 2,
           "arrows": [
@@ -2104,7 +2104,7 @@
       "scoresheet_id": "ss_108",
       "set_number": 3,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 2,
           "arrows": [
@@ -2132,7 +2132,7 @@
       "scoresheet_id": "ss_201",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 1,
           "arrows": [
@@ -2160,7 +2160,7 @@
       "scoresheet_id": "ss_201",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 1,
           "arrows": [
@@ -2188,7 +2188,7 @@
       "scoresheet_id": "ss_202",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -2216,7 +2216,7 @@
       "scoresheet_id": "ss_202",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -2244,7 +2244,7 @@
       "scoresheet_id": "ss_203",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 1,
           "arrows": [
@@ -2272,7 +2272,7 @@
       "scoresheet_id": "ss_203",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 1,
           "arrows": [
@@ -2300,7 +2300,7 @@
       "scoresheet_id": "ss_204",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -2328,7 +2328,7 @@
       "scoresheet_id": "ss_204",
       "set_number": 2,
       "penalty_points": 10,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -2356,7 +2356,7 @@
       "scoresheet_id": "ss_205",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 4,
           "arrows": [
@@ -2384,7 +2384,7 @@
       "scoresheet_id": "ss_205",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 4,
           "arrows": [
@@ -2412,7 +2412,7 @@
       "scoresheet_id": "ss_206",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -2440,7 +2440,7 @@
       "scoresheet_id": "ss_206",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 5,
           "arrows": [
@@ -2468,7 +2468,7 @@
       "scoresheet_id": "ss_207",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 3,
           "arrows": [
@@ -2496,7 +2496,7 @@
       "scoresheet_id": "ss_207",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 3,
           "arrows": [
@@ -2524,7 +2524,7 @@
       "scoresheet_id": "ss_208",
       "set_number": 1,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 2,
           "arrows": [
@@ -2552,7 +2552,7 @@
       "scoresheet_id": "ss_208",
       "set_number": 2,
       "penalty_points": 0,
-      "shooters": [
+      "athletes": [
         {
           "start_number": 2,
           "arrows": [

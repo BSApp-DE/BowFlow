@@ -3,11 +3,11 @@
   "$id": "https://spec.bowflow.example/profiles/league/schemas/lineup.schema.json",
   "title": "Meldung der Schützen (lesen und schreiben)",
   "type": "object",
-  "required": ["scoresheet_id", "shooters"],
+  "required": ["scoresheet_id", "athletes"],
   "additionalProperties": false,
   "properties": {
     "scoresheet_id": { "$ref": "../../../core/schemas/common.schema.json#/$defs/Id" },
-    "shooters": {
+    "athletes": {
       "type": "array",
       "minItems": 1,
       "items": {

@@ -16,8 +16,8 @@
   "rules": {
     "mode": "LEAGUE",
     "sets_per_match": 5,
-    "shooters_per_team": 3,
-    "arrows_per_shooter_per_set": 2,
+    "athletes_per_team": 3,
+    "arrows_per_athlete_per_set": 2,
     "points_to_win": 6
   },
   "matches": [

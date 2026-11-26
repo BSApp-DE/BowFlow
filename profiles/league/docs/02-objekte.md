@@ -44,7 +44,7 @@ Objekt `competition_plan`. Wettkampftag (`id`, `name`, `date`; optional `league_
 - Ort und Namen sind für Berichte gedacht, zum Beispiel für den Kampfrichterbericht der Scoring App (Ort, Liga, Veranstaltung, Datum).
 - Begegnungen sind nicht eigens modelliert: Scheibe 1 gegen 2, 3 gegen 4 usw. innerhalb eines Matches.
 - Ein Match hat 4, 6 oder 8 Schusszettel. Wie viele Matches es gibt, steht im Spielplan.
-- `rules`: `mode`, `sets_per_match`, `shooters_per_team`, `arrows_per_shooter_per_set`, `points_to_win`.
+- `rules`: `mode`, `sets_per_match`, `athletes_per_team`, `arrows_per_athlete_per_set`, `points_to_win`.
 - `mode`: `LEAGUE` (bei 5:5 nach allen Sätzen unentschieden) oder `KNOCKOUT` (bei Satzgleichstand wird gestochen).
 - Heim und Gast gibt es nicht, die Scheibennummer genügt.
 
@@ -68,11 +68,11 @@ Objekt `competition_plan`. Wettkampftag (`id`, `name`, `date`; optional `league_
 
 ## Meldung
 
-`scoresheet_id` und `shooters` mit `position` (Schussreihenfolge), `start_number`, `first_name` und `last_name`.
+`scoresheet_id` und `athletes` mit `position` (Schussreihenfolge), `start_number`, `first_name` und `last_name`.
 
 - Ein Schütze ist über Mannschaft (steckt im Schusszettel) und `start_number` eindeutig. Startnummern laufen immer ab 1 ohne Lücken.
 - Zurücksetzen (`DELETE`) ist nur sinnvoll, solange noch keine Pfeile erfasst sind. Das prüft die schreibende App.
-- **Ohne Meldung** gelten die Startnummern 1, 2, 3 (so viele wie `shooters_per_team`). Das gilt auch für abwesende Mannschaften.
+- **Ohne Meldung** gelten die Startnummern 1, 2, 3 (so viele wie `athletes_per_team`). Das gilt auch für abwesende Mannschaften.
 
 ## Vorläufiger Satz
 
@@ -86,7 +86,7 @@ Objekt `competition_plan`. Wettkampftag (`id`, `name`, `date`; optional `league_
 
 ## Offizieller Satz
 
-`scoresheet_id`, `set_number`, `shooters` (je `start_number` und `arrows`) und `penalty_points`.
+`scoresheet_id`, `set_number`, `athletes` (je `start_number` und `arrows`) und `penalty_points`.
 
 - Mit dem Speichern ist der Satz fixiert, und die Liga rechnet neu.
 - `penalty_points` gelten für die Mannschaft im Satz und werden von der Ringsumme abgezogen.

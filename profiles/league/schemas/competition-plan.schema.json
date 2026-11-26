@@ -70,8 +70,8 @@
       "required": [
         "mode",
         "sets_per_match",
-        "shooters_per_team",
-        "arrows_per_shooter_per_set",
+        "athletes_per_team",
+        "arrows_per_athlete_per_set",
         "points_to_win"
       ],
       "additionalProperties": false,
@@ -88,11 +88,11 @@
           "minimum": 1,
           "maximum": 5
         },
-        "shooters_per_team": {
+        "athletes_per_team": {
           "type": "integer",
           "minimum": 1
         },
-        "arrows_per_shooter_per_set": {
+        "arrows_per_athlete_per_set": {
           "type": "integer",
           "minimum": 1
         },

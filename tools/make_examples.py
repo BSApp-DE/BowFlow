@@ -22,7 +22,7 @@ import random
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parent.parent / "profiles" / "league" / "examples"
-SETS, SHOOTERS, ARROWS, POINTS_TO_WIN = 5, 3, 2, 6
+SETS, ATHLETES, ARROWS, POINTS_TO_WIN = 5, 3, 2, 6
 
 TEAMS = {  # id: (Name, Schützen)
     "t_1": ("SV Adler Testheim 1", ["Jonas Berger", "Lea Kaiser", "Murat Yildiz", "Sofia Lenz", "Tobias Ebert"]),
@@ -80,8 +80,8 @@ def opponent(sid: str) -> str:
 
 def lineup(rng: random.Random, sid: str, tid: str) -> dict:
     members = TEAMS[tid][1]
-    chosen = rng.sample(range(len(members)), SHOOTERS)
-    return {"scoresheet_id": sid, "shooters": [
+    chosen = rng.sample(range(len(members)), ATHLETES)
+    return {"scoresheet_id": sid, "athletes": [
         {"position": pos, "start_number": n + 1, "first_name": split(members[n])[0], "last_name": split(members[n])[1]}
         for pos, n in enumerate(chosen, start=1)]}
 
@@ -89,7 +89,7 @@ def lineup(rng: random.Random, sid: str, tid: str) -> dict:
 def arrows_for_set(rng: random.Random, strength: float) -> list[list[int]]:
     def arrow() -> int:
         return 0 if rng.random() < 0.03 else max(1, min(10, round(rng.gauss(strength, 1.6))))
-    return [[arrow() for _ in range(ARROWS)] for _ in range(SHOOTERS)]
+    return [[arrow() for _ in range(ARROWS)] for _ in range(ATHLETES)]
 
 
 def sheet_team(matches: list[dict]) -> dict[str, str]:
@@ -104,10 +104,10 @@ def play_pair(rng, a: str, b: str, max_sets: int, teams: dict[str, str], lineups
         ring = {}
         for sid in (a, b):
             pen = (penalties or {}).get((sid, n), 0)
-            shooters = arrows_for_set(rng, strength[teams[sid]])
-            official[(sid, n)] = {"scoresheet_id": sid, "set_number": n, "penalty_points": pen, "shooters": [
-                {"start_number": lineups[sid]["shooters"][i]["start_number"], "arrows": arr} for i, arr in enumerate(shooters)]}
-            ring[sid] = sum(sum(arr) for arr in shooters) - pen
+            athletes = arrows_for_set(rng, strength[teams[sid]])
+            official[(sid, n)] = {"scoresheet_id": sid, "set_number": n, "penalty_points": pen, "athletes": [
+                {"start_number": lineups[sid]["athletes"][i]["start_number"], "arrows": arr} for i, arr in enumerate(athletes)]}
+            ring[sid] = sum(sum(arr) for arr in athletes) - pen
         if ring[a] != ring[b]:
             total[a if ring[a] > ring[b] else b] += 2
         else:
@@ -120,7 +120,7 @@ def play_pair(rng, a: str, b: str, max_sets: int, teams: dict[str, str], lineups
 
 def ring_sum(official: dict, sid: str, n: int) -> int:
     o = official[(sid, n)]
-    return sum(sum(s["arrows"]) for s in o["shooters"]) - o["penalty_points"]
+    return sum(sum(s["arrows"]) for s in o["athletes"]) - o["penalty_points"]
 
 
 def results(official: dict, sid: str, mode: str, shoot_off: dict[str, bool]) -> dict:
@@ -200,8 +200,8 @@ def build_league(seed: int) -> dict | None:
 
     plan = {"event": {"id": "ev_42", "name": "Testliga Recurve, Wettkampftag 4", "date": "2026-11-29",
                       "league_name": "Testliga Recurve", "season_name": "Runde 2026", "location": LOCATION},
-            "rules": {"mode": "LEAGUE", "sets_per_match": SETS, "shooters_per_team": SHOOTERS,
-                      "arrows_per_shooter_per_set": ARROWS, "points_to_win": POINTS_TO_WIN},
+            "rules": {"mode": "LEAGUE", "sets_per_match": SETS, "athletes_per_team": ATHLETES,
+                      "arrows_per_athlete_per_set": ARROWS, "points_to_win": POINTS_TO_WIN},
             "matches": matches}
     state = {"state": "RUNNING", "match_states": [{"number": 1, "state": "COMPLETED"}, {"number": 2, "state": "ACTIVE"}] +
              [{"number": m, "state": "LOCKED"} for m in range(3, len(matches) + 1)]}
@@ -231,8 +231,8 @@ def build_knockout(seed: int) -> dict | None:
     final = {sid: results(official, sid, "KNOCKOUT", winner) for sid in ("ss_101", "ss_102")}
     plan = {"event": {"id": "ev_43", "name": "Testpokal Recurve, Runde 1", "date": "2026-11-29", "league_name": "Testpokal Recurve",
                       "location": LOCATION},
-            "rules": {"mode": "KNOCKOUT", "sets_per_match": SETS, "shooters_per_team": SHOOTERS,
-                      "arrows_per_shooter_per_set": ARROWS, "points_to_win": POINTS_TO_WIN},
+            "rules": {"mode": "KNOCKOUT", "sets_per_match": SETS, "athletes_per_team": ATHLETES,
+                      "arrows_per_athlete_per_set": ARROWS, "points_to_win": POINTS_TO_WIN},
             "matches": matches}
     state = {"state": "RUNNING", "match_states": [{"number": 1, "state": "ACTIVE"}, {"number": 2, "state": "LOCKED"}]}
     snapshot = {"sequence": 57, "competition_plan": plan, "event_state": state,

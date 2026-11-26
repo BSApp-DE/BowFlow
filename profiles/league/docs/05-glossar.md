@@ -9,6 +9,7 @@
 | Begegnung | Zwei Mannschaften gegeneinander: Scheibe 1 gegen 2, 3 gegen 4 usw. | (nicht modelliert) |
 | Schusszettel | Eine Mannschaft an einer Scheibe in einem Match, mit eigener ID und QR-Code | `scoresheet` |
 | Scheibe | Physische Scheibe | `target_number` |
+| Schütze | Teilnehmer einer Mannschaft. Englisch bewusst `athlete`, weil „shooter" im Englischen oft an Militär oder Jagd erinnert. | `athlete` (Listen: `athletes`) |
 | Satz | 3 Schützen mit je 2 Pfeilen | `set_number` |
 | Startnummer | Nummer des Schützen in der Mannschaft, ab 1 ohne Lücken | `start_number` |
 | Schützenliste | Alle Schützen einer Mannschaft mit Startnummer und Name; Grundlage für die Meldung | `roster` |

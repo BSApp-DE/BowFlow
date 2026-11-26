@@ -173,7 +173,7 @@ class ServerChecker:
         body["scoresheet_id"] = sid
         wrong = dict(body, scoresheet_id=sid + "-x")
         self.problem_ok(self.req("PUT", path, token=token, body=wrong), 422, "VALIDATION_FAILED", "PUT mit abweichender scoresheet_id im Objekt ergibt 422 VALIDATION_FAILED")
-        self.problem_ok(self.req("PUT", path, token=token, body={"shooters": []}), 422, "VALIDATION_FAILED", "PUT mit ungültiger Meldung ergibt 422 VALIDATION_FAILED")
+        self.problem_ok(self.req("PUT", path, token=token, body={"athletes": []}), 422, "VALIDATION_FAILED", "PUT mit ungültiger Meldung ergibt 422 VALIDATION_FAILED")
 
         observer = None
         if self.a.code2:
